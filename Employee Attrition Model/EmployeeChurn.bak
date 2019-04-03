@@ -1,0 +1,1815 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="382" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Kaggle_HRAnalytics.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Age" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Attrition" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="BusinessTravel" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="DailyRate" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Department" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="DistanceFromHome" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Education" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EducationField" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EmployeeCount" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EmployeeNumber" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EnvironmentSatisfaction" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="HourlyRate" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobInvolvement" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobLevel" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobRole" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobSatisfaction" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="MaritalStatus" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="MonthlyIncome" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="MonthlyRate" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="NumCompaniesWorked" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Over18" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="OverTime" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="PercentSalaryHike" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="PerformanceRating" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="RelationshipSatisfaction" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="StandardHours" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="StockOptionLevel" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="TotalWorkingYears" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="TrainingTimesLastYear" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="WorkLifeBalance" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsAtCompany" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsInCurrentRole" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsSinceLastPromotion" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsWithCurrManager" size="254" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="198" y="382" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="EmployeeNumber" selected="True" />
+            <Field field="Attrition" selected="True" />
+            <Field field="Age" selected="True" />
+            <Field field="BusinessTravel" selected="True" />
+            <Field field="DailyRate" selected="True" />
+            <Field field="Department" selected="True" />
+            <Field field="DistanceFromHome" selected="True" />
+            <Field field="Education" selected="True" />
+            <Field field="EducationField" selected="True" />
+            <Field field="EnvironmentSatisfaction" selected="True" />
+            <Field field="Gender" selected="True" />
+            <Field field="HourlyRate" selected="True" />
+            <Field field="JobInvolvement" selected="True" />
+            <Field field="JobLevel" selected="True" />
+            <Field field="JobRole" selected="True" />
+            <Field field="JobSatisfaction" selected="True" />
+            <Field field="MaritalStatus" selected="True" />
+            <Field field="MonthlyIncome" selected="True" />
+            <Field field="MonthlyRate" selected="True" />
+            <Field field="NumCompaniesWorked" selected="True" />
+            <Field field="OverTime" selected="True" />
+            <Field field="PercentSalaryHike" selected="True" />
+            <Field field="PerformanceRating" selected="True" />
+            <Field field="RelationshipSatisfaction" selected="True" />
+            <Field field="StandardHours" selected="True" />
+            <Field field="StockOptionLevel" selected="True" />
+            <Field field="TotalWorkingYears" selected="True" />
+            <Field field="TrainingTimesLastYear" selected="True" />
+            <Field field="WorkLifeBalance" selected="True" />
+            <Field field="YearsAtCompany" selected="True" />
+            <Field field="YearsInCurrentRole" selected="True" />
+            <Field field="YearsSinceLastPromotion" selected="True" />
+            <Field field="YearsWithCurrManager" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EmployeeNumber" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Int16" />
+            <Field name="Attrition" size="3" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="String" />
+            <Field name="Age" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="BusinessTravel" size="17" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="String" />
+            <Field name="DailyRate" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Int16" />
+            <Field name="Department" size="22" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="DistanceFromHome" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="Education" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="EducationField" size="16" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EnvironmentSatisfaction" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="Gender" size="6" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="String" />
+            <Field name="HourlyRate" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="JobInvolvement" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="JobLevel" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="JobRole" size="25" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobSatisfaction" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="MaritalStatus" size="8" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="String" />
+            <Field name="MonthlyIncome" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Int16" />
+            <Field name="MonthlyRate" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Int16" />
+            <Field name="NumCompaniesWorked" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="OverTime" size="3" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="String" />
+            <Field name="PercentSalaryHike" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="PerformanceRating" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="RelationshipSatisfaction" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="StandardHours" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="StockOptionLevel" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="TotalWorkingYears" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="TrainingTimesLastYear" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="WorkLifeBalance" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="YearsAtCompany" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="YearsInCurrentRole" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="YearsSinceLastPromotion" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+            <Field name="YearsWithCurrManager" source="File: C:\Users\jheisler\OneDrive - Continuus Technologies\Demo &amp; Blog\HRChurnKaggle\Kaggle_HRAnalytics.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="126" y="382" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EmployeeNumber" selected="True" />
+            <SelectField field="Attrition" selected="True" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="BusinessTravel" selected="True" />
+            <SelectField field="DailyRate" selected="True" />
+            <SelectField field="Department" selected="True" />
+            <SelectField field="DistanceFromHome" selected="True" />
+            <SelectField field="Education" selected="True" />
+            <SelectField field="EducationField" selected="True" />
+            <SelectField field="EmployeeCount" selected="False" />
+            <SelectField field="EnvironmentSatisfaction" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="HourlyRate" selected="True" />
+            <SelectField field="JobInvolvement" selected="True" />
+            <SelectField field="JobLevel" selected="True" />
+            <SelectField field="JobRole" selected="True" />
+            <SelectField field="JobSatisfaction" selected="True" />
+            <SelectField field="MaritalStatus" selected="True" />
+            <SelectField field="MonthlyIncome" selected="True" />
+            <SelectField field="MonthlyRate" selected="True" />
+            <SelectField field="NumCompaniesWorked" selected="True" />
+            <SelectField field="Over18" selected="False" description="Everyone is over 18-- removed JH" />
+            <SelectField field="OverTime" selected="True" />
+            <SelectField field="PercentSalaryHike" selected="True" />
+            <SelectField field="PerformanceRating" selected="True" />
+            <SelectField field="RelationshipSatisfaction" selected="True" />
+            <SelectField field="StandardHours" selected="True" />
+            <SelectField field="StockOptionLevel" selected="True" />
+            <SelectField field="TotalWorkingYears" selected="True" />
+            <SelectField field="TrainingTimesLastYear" selected="True" />
+            <SelectField field="WorkLifeBalance" selected="True" />
+            <SelectField field="YearsAtCompany" selected="True" />
+            <SelectField field="YearsInCurrentRole" selected="True" />
+            <SelectField field="YearsSinceLastPromotion" selected="True" />
+            <SelectField field="YearsWithCurrManager" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="130">
+      <GuiSettings>
+        <Position x="1314" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target.level">Yes</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="predictions">
+          <RecordInfo>
+            <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="BM" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="NN" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="logit" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="RF" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="error_measures">
+          <RecordInfo>
+            <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Accuracy" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_No" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_Yes" source="R-DATA:" type="Double" />
+            <Field name="F1" source="R-DATA:" type="Double" />
+            <Field name="AUC" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Model Comparison.yxmc" />
+    </Node>
+    <Node ToolID="131">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1230" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="132">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1434" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_16140_5ad8169b12554da99e47d57fea703a76_\Engine_17600_f314065380f24514890cd670878cdc43_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="133">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1398" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_16140_5ad8169b12554da99e47d57fea703a76_\Engine_17600_5b413f0188f84d14a701e9203bab71ee_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="860" y="378" width="175" height="115" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>train/test</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings>
+            <Position x="870" y="424" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">90</Value>
+              <Value name="validation pct">10</Value>
+              <Value name="rand seed">1000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings>
+            <Position x="966" y="412" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Selected_Field">Attrition</Value>
+              <Value name="Oversample_Value">Yes</Value>
+              <Value name="Desired_Pct">50</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Oversample_Field.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="272" y="347.9998" width="571" height="157.0002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Encode Predictors</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="282" y="436" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="EmployeeNumber" />
+              </KeyFields>
+              <DataFields>
+                <Field field="EmployeeNumber" selected="False" />
+                <Field field="Attrition" selected="False" />
+                <Field field="Age" selected="False" />
+                <Field field="BusinessTravel" selected="False" />
+                <Field field="DailyRate" selected="False" />
+                <Field field="Department" selected="True" />
+                <Field field="DistanceFromHome" selected="False" />
+                <Field field="Education" selected="False" />
+                <Field field="EducationField" selected="True" />
+                <Field field="EnvironmentSatisfaction" selected="False" />
+                <Field field="Gender" selected="True" />
+                <Field field="HourlyRate" selected="False" />
+                <Field field="JobInvolvement" selected="False" />
+                <Field field="JobLevel" selected="False" />
+                <Field field="JobRole" selected="True" />
+                <Field field="JobSatisfaction" selected="False" />
+                <Field field="MaritalStatus" selected="True" />
+                <Field field="MonthlyIncome" selected="False" />
+                <Field field="MonthlyRate" selected="False" />
+                <Field field="NumCompaniesWorked" selected="False" />
+                <Field field="OverTime" selected="True" />
+                <Field field="PercentSalaryHike" selected="False" />
+                <Field field="PerformanceRating" selected="False" />
+                <Field field="RelationshipSatisfaction" selected="False" />
+                <Field field="StandardHours" selected="False" />
+                <Field field="StockOptionLevel" selected="False" />
+                <Field field="TotalWorkingYears" selected="False" />
+                <Field field="TrainingTimesLastYear" selected="False" />
+                <Field field="WorkLifeBalance" selected="False" />
+                <Field field="YearsAtCompany" selected="False" />
+                <Field field="YearsInCurrentRole" selected="False" />
+                <Field field="YearsSinceLastPromotion" selected="False" />
+                <Field field="YearsWithCurrManager" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="436" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Name]+'_'+[Value]" field="Name" size="75" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Name = [Name]+'_'+[Value]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="534" y="436" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="EmployeeNumber" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" source="CrossTab:Group:Concat:" type="Int16" />
+                <Field name="Department_Human_Resources" size="2048" source="CrossTab:Header:Name:Department_Human Resources:Concat:" type="V_String" />
+                <Field name="Department_Research___Development" size="2048" source="CrossTab:Header:Name:Department_Research &amp; Development:Concat:" type="V_String" />
+                <Field name="Department_Sales" size="2048" source="CrossTab:Header:Name:Department_Sales:Concat:" type="V_String" />
+                <Field name="EducationField_Human_Resources" size="2048" source="CrossTab:Header:Name:EducationField_Human Resources:Concat:" type="V_String" />
+                <Field name="EducationField_Life_Sciences" size="2048" source="CrossTab:Header:Name:EducationField_Life Sciences:Concat:" type="V_String" />
+                <Field name="EducationField_Marketing" size="2048" source="CrossTab:Header:Name:EducationField_Marketing:Concat:" type="V_String" />
+                <Field name="EducationField_Medical" size="2048" source="CrossTab:Header:Name:EducationField_Medical:Concat:" type="V_String" />
+                <Field name="EducationField_Other" size="2048" source="CrossTab:Header:Name:EducationField_Other:Concat:" type="V_String" />
+                <Field name="EducationField_Technical_Degree" size="2048" source="CrossTab:Header:Name:EducationField_Technical Degree:Concat:" type="V_String" />
+                <Field name="Gender_Female" size="2048" source="CrossTab:Header:Name:Gender_Female:Concat:" type="V_String" />
+                <Field name="Gender_Male" size="2048" source="CrossTab:Header:Name:Gender_Male:Concat:" type="V_String" />
+                <Field name="JobRole_Healthcare_Representative" size="2048" source="CrossTab:Header:Name:JobRole_Healthcare Representative:Concat:" type="V_String" />
+                <Field name="JobRole_Human_Resources" size="2048" source="CrossTab:Header:Name:JobRole_Human Resources:Concat:" type="V_String" />
+                <Field name="JobRole_Laboratory_Technician" size="2048" source="CrossTab:Header:Name:JobRole_Laboratory Technician:Concat:" type="V_String" />
+                <Field name="JobRole_Manager" size="2048" source="CrossTab:Header:Name:JobRole_Manager:Concat:" type="V_String" />
+                <Field name="JobRole_Manufacturing_Director" size="2048" source="CrossTab:Header:Name:JobRole_Manufacturing Director:Concat:" type="V_String" />
+                <Field name="JobRole_Research_Director" size="2048" source="CrossTab:Header:Name:JobRole_Research Director:Concat:" type="V_String" />
+                <Field name="JobRole_Research_Scientist" size="2048" source="CrossTab:Header:Name:JobRole_Research Scientist:Concat:" type="V_String" />
+                <Field name="JobRole_Sales_Executive" size="2048" source="CrossTab:Header:Name:JobRole_Sales Executive:Concat:" type="V_String" />
+                <Field name="JobRole_Sales_Representative" size="2048" source="CrossTab:Header:Name:JobRole_Sales Representative:Concat:" type="V_String" />
+                <Field name="MaritalStatus_Divorced" size="2048" source="CrossTab:Header:Name:MaritalStatus_Divorced:Concat:" type="V_String" />
+                <Field name="MaritalStatus_Married" size="2048" source="CrossTab:Header:Name:MaritalStatus_Married:Concat:" type="V_String" />
+                <Field name="MaritalStatus_Single" size="2048" source="CrossTab:Header:Name:MaritalStatus_Single:Concat:" type="V_String" />
+                <Field name="OverTime_No" size="2048" source="CrossTab:Header:Name:OverTime_No:Concat:" type="V_String" />
+                <Field name="OverTime_Yes" size="2048" source="CrossTab:Header:Name:OverTime_Yes:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EmployeeNumber" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="618" y="436" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>All</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Department_Human_Resources" />
+                <Field name="Department_Research___Development" />
+                <Field name="Department_Sales" />
+                <Field name="EducationField_Human_Resources" />
+                <Field name="EducationField_Life_Sciences" />
+                <Field name="EducationField_Marketing" />
+                <Field name="EducationField_Medical" />
+                <Field name="EducationField_Other" />
+                <Field name="EducationField_Technical_Degree" />
+                <Field name="Gender_Female" />
+                <Field name="Gender_Male" />
+                <Field name="JobRole_Healthcare_Representative" />
+                <Field name="JobRole_Human_Resources" />
+                <Field name="JobRole_Laboratory_Technician" />
+                <Field name="JobRole_Manager" />
+                <Field name="JobRole_Manufacturing_Director" />
+                <Field name="JobRole_Research_Director" />
+                <Field name="JobRole_Research_Scientist" />
+                <Field name="JobRole_Sales_Executive" />
+                <Field name="JobRole_Sales_Representative" />
+                <Field name="MaritalStatus_Divorced" />
+                <Field name="MaritalStatus_Married" />
+                <Field name="MaritalStatus_Single" />
+                <Field name="OverTime_No" />
+                <Field name="OverTime_Yes" />
+                <Field name="*Unknown" />
+                <Field name="EmployeeNumber" selected="False" />
+                <Field name="RecordID" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>IIF(ISEMPTY([_CurrentField_]),0,1)</Expression>
+              <ChangeFieldType value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IIF(ISEMPTY([_CurrentField_]),0,1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="702" y="424" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="EmployeeNumber" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="EmployeeNumber" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_EmployeeNumber" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_Attrition" selected="True" input="Left_" />
+                    <SelectField field="Left_Age" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_DailyRate" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_DistanceFromHome" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_Education" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_EnvironmentSatisfaction" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_HourlyRate" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_JobInvolvement" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_JobLevel" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_JobSatisfaction" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_MonthlyIncome" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_MonthlyRate" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_NumCompaniesWorked" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_PercentSalaryHike" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_PerformanceRating" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_RelationshipSatisfaction" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_StandardHours" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_StockOptionLevel" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_TotalWorkingYears" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_TrainingTimesLastYear" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_WorkLifeBalance" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_YearsAtCompany" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_YearsInCurrentRole" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_YearsSinceLastPromotion" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_YearsWithCurrManager" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Left_BusinessTravel" selected="True" input="Left_" type="Int32" size="4" />
+                    <SelectField field="Right_EmployeeNumber" selected="False" rename="Right_EmployeeNumber" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_Department_Human_Resources" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_Department_Research___Development" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_Department_Sales" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_EducationField_Human_Resources" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_EducationField_Life_Sciences" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_EducationField_Marketing" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_EducationField_Medical" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_EducationField_Other" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_EducationField_Technical_Degree" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_Gender_Female" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_Gender_Male" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Healthcare_Representative" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Human_Resources" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Laboratory_Technician" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Manager" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Manufacturing_Director" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Research_Director" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Research_Scientist" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Sales_Executive" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_JobRole_Sales_Representative" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_MaritalStatus_Divorced" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_MaritalStatus_Married" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_MaritalStatus_Single" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_OverTime_No" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="Right_OverTime_Yes" selected="True" input="Right_" type="Int32" size="4" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="381.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Department" selected="False" />
+                <SelectField field="EducationField" selected="False" />
+                <SelectField field="Gender" selected="False" />
+                <SelectField field="JobRole" selected="False" />
+                <SelectField field="MaritalStatus" selected="False" />
+                <SelectField field="OverTime" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="366" y="435.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" type="V_String" size="75" />
+                <SelectField field="Value" selected="True" size="75" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="366" y="382" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [BusinessTravel] = 'Non-Travel'&#xA;THEN 0&#xA;ELSEIF [BusinessTravel] = 'Travel_Rarely'&#xA;THEN 1&#xA;ELSEIF [BusinessTravel] = 'Travel_Frequently'&#xA;THEN 2 &#xA;ELSE Null()&#xA;ENDIF" field="BusinessTravel" size="17" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>BusinessTravel = IF [BusinessTravel] = 'Non-Travel'
+THEN 0
+ELSEIF [BusinessTrave...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="774" y="424" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="EmployeeNumber" selected="False" />
+                <SelectField field="MonthlyRate" selected="False" />
+                <SelectField field="TotalWorkingYears" selected="False" />
+                <SelectField field="YearsAtCompany" selected="False" />
+                <SelectField field="YearsInCurrentRole" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="378" width="161.9246" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>BoostedModel</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="82">
+          <GuiSettings>
+            <Position x="1060" y="412" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">BM</Value>
+              <Value name="select.target">Attrition</Value>
+              <Value name="select.predictors">Attrition=False,Age=True,DailyRate=True,DistanceFromHome=True,Education=True,EnvironmentSatisfaction=True,HourlyRate=True,JobInvolvement=True,JobLevel=True,JobSatisfaction=True,MonthlyIncome=True,NumCompaniesWorked=True,PercentSalaryHike=True,PerformanceRating=True,RelationshipSatisfaction=True,StandardHours=True,StockOptionLevel=True,TrainingTimesLastYear=True,WorkLifeBalance=True,YearsSinceLastPromotion=True,YearsWithCurrManager=True,BusinessTravel=True,Department_Human_Resources=True,Department_Research___Development=True,Department_Sales=True,EducationField_Human_Resources=True,EducationField_Life_Sciences=True,EducationField_Marketing=True,EducationField_Medical=True,EducationField_Other=True,EducationField_Technical_Degree=True,Gender_Female=True,Gender_Male=True,JobRole_Healthcare_Representative=True,JobRole_Human_Resources=True,JobRole_Laboratory_Technician=True,JobRole_Manager=True,JobRole_Manufacturing_Director=True,JobRole_Research_Director=True,JobRole_Research_Scientist=True,JobRole_Sales_Executive=True,JobRole_Sales_Representative=True,MaritalStatus_Divorced=True,MaritalStatus_Married=True,MaritalStatus_Single=True,OverTime_No=True,OverTime_Yes=True</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Age</Value>
+              <Value name="marginal.plots">False</Value>
+              <Value name="plot.min.importance">2.5</Value>
+              <Value name="type.distribution">False</Value>
+              <Value name="type.continuous">True</Value>
+              <Value name="dist.gaussian">True</Value>
+              <Value name="dist.laplace">False</Value>
+              <Value name="dist.t">False</Value>
+              <Value name="t.df">4</Value>
+              <Value name="type.count">False</Value>
+              <Value name="type.binomial">False</Value>
+              <Value name="dist.bernoulli">True</Value>
+              <Value name="dist.adaboost">False</Value>
+              <Value name="type.multinomial">False</Value>
+              <Value name="n.trees">5000</Value>
+              <Value name="assess.cv">True</Value>
+              <Value name="num.folds">5</Value>
+              <Value name="n.cores">1</Value>
+              <Value name="assess.test">False</Value>
+              <Value name="train.fraction">50.0</Value>
+              <Value name="assess.oob">False</Value>
+              <Value name="bag.fraction">50.0</Value>
+              <Value name="shrinkage">0.0020</Value>
+              <Value name="interaction.depth">1</Value>
+              <Value name="n.minobsinnode">10</Value>
+              <Value name="rand.seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="489" width="127.8416" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>NeuralN</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="55">
+          <GuiSettings>
+            <Position x="1060" y="523" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">NN</Value>
+              <Value name="select.target">Attrition</Value>
+              <Value name="select.predictors">Attrition=False,Age=True,DailyRate=True,DistanceFromHome=True,Education=True,EnvironmentSatisfaction=True,HourlyRate=True,JobInvolvement=True,JobLevel=True,JobSatisfaction=True,MonthlyIncome=True,NumCompaniesWorked=True,PercentSalaryHike=True,PerformanceRating=True,RelationshipSatisfaction=True,StandardHours=True,StockOptionLevel=True,TrainingTimesLastYear=True,WorkLifeBalance=True,YearsSinceLastPromotion=True,YearsWithCurrManager=True,BusinessTravel=True,Department_Human_Resources=True,Department_Research___Development=True,Department_Sales=True,EducationField_Human_Resources=True,EducationField_Life_Sciences=True,EducationField_Marketing=True,EducationField_Medical=True,EducationField_Other=True,EducationField_Technical_Degree=True,Gender_Female=True,Gender_Male=True,JobRole_Healthcare_Representative=True,JobRole_Human_Resources=True,JobRole_Laboratory_Technician=True,JobRole_Manager=True,JobRole_Manufacturing_Director=True,JobRole_Research_Director=True,JobRole_Research_Scientist=True,JobRole_Sales_Executive=True,JobRole_Sales_Representative=True,MaritalStatus_Divorced=True,MaritalStatus_Married=True,MaritalStatus_Single=True,OverTime_No=True,OverTime_Yes=True</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Age</Value>
+              <Value name="num.nodes">10</Value>
+              <Value name="marginal.plots">True</Value>
+              <Value name="custom.scaling">False</Value>
+              <Value name="scale.type">z-score</Value>
+              <Value name="decay">0.100</Value>
+              <Value name="range">0.700</Value>
+              <Value name="max.wts">1000</Value>
+              <Value name="max.iter">100</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Neural_Network.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="711" width="95.46853" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>RF</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="73">
+          <GuiSettings>
+            <Position x="1060" y="745" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Model Name">RF</Value>
+              <Value name="Y Var">Attrition</Value>
+              <Value name="X Vars">Age + DistanceFromHome + EnvironmentSatisfaction + JobInvolvement + JobSatisfaction + MonthlyIncome + NumCompaniesWorked + PercentSalaryHike + PerformanceRating + RelationshipSatisfaction + TrainingTimesLastYear + WorkLifeBalance + YearsSinceLastPromotion + BusinessTravel + MaritalStatus_Divorced + MaritalStatus_Married + MaritalStatus_Single + OverTime_No + OverTime_Yes</Value>
+              <Value name="Num Trees">1000</Value>
+              <Value name="Custom Num Vars">False</Value>
+              <Value name="Num Vars">50</Value>
+              <Value name="model.size">False</Value>
+              <Value name="total.nodes">100</Value>
+              <Value name="max.depth">10</Value>
+              <Value name="node.size">5</Value>
+              <Value name="replace">True</Value>
+              <Value name="samp.rate">100</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="600" width="109.9672" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Logit</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="37">
+          <GuiSettings Plugin="Logistic_Regression">
+            <Position x="1060" y="634" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">logit</Value>
+              <Value name="Y Var">Attrition</Value>
+              <Value name="X Vars">Age,DailyRate,DistanceFromHome,JobInvolvement,JobSatisfaction,TrainingTimesLastYear,WorkLifeBalance,YearsSinceLastPromotion,YearsWithCurrManager,BusinessTravel,EducationField_Life_Sciences,EducationField_Medical,EducationField_Other,Gender_Female,JobRole_Healthcare_Representative,JobRole_Manager,JobRole_Manufacturing_Director,JobRole_Research_Director,JobRole_Research_Scientist,JobRole_Sales_Executive,MaritalStatus_Divorced,MaritalStatus_Married,OverTime_No</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="standardize_pred">False</Value>
+              <Value name="internal_cv">False</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="set_seed_internal_cv">False</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="Link">logit</Value>
+              <Value name="external_cv">True</Value>
+              <Value name="nfolds_external">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="posClass">
+              </Value>
+              <Value name="stratified">False</Value>
+              <Value name="set_seed_external_cv">False</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>logit</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="944" y="54" width="439" height="289.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>EDA</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings>
+            <Position x="1024" y="182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">Age=True,Attrition=True,BusinessTravel=True,DailyRate=True,Department=True,DistanceFromHome=True,Education=True,EducationField=True,EmployeeCount=True,EmployeeNumber=True,EnvironmentSatisfaction=True,Gender=True,HourlyRate=True,JobInvolvement=True,JobLevel=True,JobRole=True,JobSatisfaction=True,MaritalStatus=True,MonthlyIncome=True,MonthlyRate=True,NumCompaniesWorked=True,OverTime=True,PercentSalaryHike=True,PerformanceRating=True,RelationshipSatisfaction=True,StandardHours=True,StockOptionLevel=True,TotalWorkingYears=True,TrainingTimesLastYear=True,WorkLifeBalance=True,YearsAtCompany=True,YearsInCurrentRole=True,YearsSinceLastPromotion=True,YearsWithCurrManager=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">False</Value>
+              <Value name="NNumber">500</Value>
+              <Value name="Percent">True</Value>
+              <Value name="NPercent">50</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1098" y="182" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_16140_5ad8169b12554da99e47d57fea703a76_\Engine_17600_f082bd9e5bfa48b781a44a6baae57db7_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
+            <Position x="1026" y="274" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields orderChanged="True">
+                <Field name="Attrition" />
+                <Field name="Age" />
+                <Field name="DailyRate" />
+                <Field name="DistanceFromHome" />
+                <Field name="Education" />
+                <Field name="EnvironmentSatisfaction" />
+                <Field name="HourlyRate" />
+                <Field name="JobInvolvement" />
+                <Field name="JobLevel" />
+                <Field name="JobSatisfaction" />
+                <Field name="MonthlyIncome" />
+                <Field name="MonthlyRate" />
+                <Field name="NumCompaniesWorked" />
+                <Field name="PercentSalaryHike" />
+                <Field name="PerformanceRating" />
+                <Field name="RelationshipSatisfaction" />
+                <Field name="StandardHours" />
+                <Field name="StockOptionLevel" />
+                <Field name="TotalWorkingYears" />
+                <Field name="TrainingTimesLastYear" />
+                <Field name="WorkLifeBalance" />
+                <Field name="YearsAtCompany" />
+                <Field name="YearsInCurrentRole" />
+                <Field name="YearsSinceLastPromotion" />
+                <Field name="YearsWithCurrManager" />
+                <Field name="BusinessTravel" />
+                <Field name="Department_Human_Resources" />
+                <Field name="Department_Research___Development" />
+                <Field name="Department_Sales" />
+                <Field name="EducationField_Human_Resources" />
+                <Field name="EducationField_Life_Sciences" />
+                <Field name="EducationField_Marketing" />
+                <Field name="EducationField_Medical" />
+                <Field name="EducationField_Other" />
+                <Field name="EducationField_Technical_Degree" />
+                <Field name="Gender_Female" />
+                <Field name="Gender_Male" />
+                <Field name="JobRole_Healthcare_Representative" />
+                <Field name="JobRole_Human_Resources" />
+                <Field name="JobRole_Laboratory_Technician" />
+                <Field name="JobRole_Manager" />
+                <Field name="JobRole_Manufacturing_Director" />
+                <Field name="JobRole_Research_Director" />
+                <Field name="JobRole_Research_Scientist" />
+                <Field name="JobRole_Sales_Executive" />
+                <Field name="JobRole_Sales_Representative" />
+                <Field name="MaritalStatus_Divorced" />
+                <Field name="MaritalStatus_Married" />
+                <Field name="MaritalStatus_Single" />
+                <Field name="OverTime_No" />
+                <Field name="OverTime_Yes" />
+                <Field name="*Unknown" />
+                <Field name="EmployeeNumber" selected="False" />
+              </Fields>
+              <Covariance value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="1098" y="274" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Attrition" />
+                <Field name="Age" />
+                <Field name="DailyRate" />
+                <Field name="DistanceFromHome" />
+                <Field name="Education" />
+                <Field name="EnvironmentSatisfaction" />
+                <Field name="HourlyRate" />
+                <Field name="JobInvolvement" />
+                <Field name="JobLevel" />
+                <Field name="JobSatisfaction" />
+                <Field name="MonthlyIncome" />
+                <Field name="MonthlyRate" />
+                <Field name="NumCompaniesWorked" />
+                <Field name="PercentSalaryHike" />
+                <Field name="PerformanceRating" />
+                <Field name="RelationshipSatisfaction" />
+                <Field name="StandardHours" />
+                <Field name="StockOptionLevel" />
+                <Field name="TotalWorkingYears" />
+                <Field name="TrainingTimesLastYear" />
+                <Field name="WorkLifeBalance" />
+                <Field name="YearsAtCompany" />
+                <Field name="YearsInCurrentRole" />
+                <Field name="YearsSinceLastPromotion" />
+                <Field name="YearsWithCurrManager" />
+                <Field name="BusinessTravel" />
+                <Field name="Department_Human_Resources" />
+                <Field name="Department_Research___Development" />
+                <Field name="Department_Sales" />
+                <Field name="EducationField_Human_Resources" />
+                <Field name="EducationField_Life_Sciences" />
+                <Field name="EducationField_Marketing" />
+                <Field name="EducationField_Medical" />
+                <Field name="EducationField_Other" />
+                <Field name="EducationField_Technical_Degree" />
+                <Field name="Gender_Female" />
+                <Field name="Gender_Male" />
+                <Field name="JobRole_Healthcare_Representative" />
+                <Field name="JobRole_Human_Resources" />
+                <Field name="JobRole_Laboratory_Technician" />
+                <Field name="JobRole_Manager" />
+                <Field name="JobRole_Manufacturing_Director" />
+                <Field name="JobRole_Research_Director" />
+                <Field name="JobRole_Research_Scientist" />
+                <Field name="JobRole_Sales_Executive" />
+                <Field name="JobRole_Sales_Representative" />
+                <Field name="MaritalStatus_Divorced" />
+                <Field name="MaritalStatus_Married" />
+                <Field name="MaritalStatus_Single" />
+                <Field name="OverTime_No" />
+                <Field name="OverTime_Yes" />
+                <Field name="*Unknown" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>if [_CurrentField_] &gt; 0.5 
+then 'ALERT!!!'
+else '0'
+endif</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="V_WString" size="8" scale="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>if [_CurrentField_] &gt; 0.5 
+then 'ALERT!!!'
+else '0'
+endif</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="1170" y="274.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="FieldName" />
+              </KeyFields>
+              <DataFields>
+                <Field field="FieldName" selected="False" />
+                <Field field="Attrition" selected="True" />
+                <Field field="Age" selected="True" />
+                <Field field="DailyRate" selected="True" />
+                <Field field="DistanceFromHome" selected="True" />
+                <Field field="Education" selected="True" />
+                <Field field="EnvironmentSatisfaction" selected="True" />
+                <Field field="HourlyRate" selected="True" />
+                <Field field="JobInvolvement" selected="True" />
+                <Field field="JobLevel" selected="True" />
+                <Field field="JobSatisfaction" selected="True" />
+                <Field field="MonthlyIncome" selected="True" />
+                <Field field="MonthlyRate" selected="True" />
+                <Field field="NumCompaniesWorked" selected="True" />
+                <Field field="PercentSalaryHike" selected="True" />
+                <Field field="PerformanceRating" selected="True" />
+                <Field field="RelationshipSatisfaction" selected="True" />
+                <Field field="StandardHours" selected="True" />
+                <Field field="StockOptionLevel" selected="True" />
+                <Field field="TotalWorkingYears" selected="True" />
+                <Field field="TrainingTimesLastYear" selected="True" />
+                <Field field="WorkLifeBalance" selected="True" />
+                <Field field="YearsAtCompany" selected="True" />
+                <Field field="YearsInCurrentRole" selected="True" />
+                <Field field="YearsSinceLastPromotion" selected="True" />
+                <Field field="YearsWithCurrManager" selected="True" />
+                <Field field="BusinessTravel" selected="True" />
+                <Field field="Department_Human_Resources" selected="True" />
+                <Field field="Department_Research___Development" selected="True" />
+                <Field field="Department_Sales" selected="True" />
+                <Field field="EducationField_Human_Resources" selected="True" />
+                <Field field="EducationField_Life_Sciences" selected="True" />
+                <Field field="EducationField_Marketing" selected="True" />
+                <Field field="EducationField_Medical" selected="True" />
+                <Field field="EducationField_Other" selected="True" />
+                <Field field="EducationField_Technical_Degree" selected="True" />
+                <Field field="Gender_Female" selected="True" />
+                <Field field="Gender_Male" selected="True" />
+                <Field field="JobRole_Healthcare_Representative" selected="True" />
+                <Field field="JobRole_Human_Resources" selected="True" />
+                <Field field="JobRole_Laboratory_Technician" selected="True" />
+                <Field field="JobRole_Manager" selected="True" />
+                <Field field="JobRole_Manufacturing_Director" selected="True" />
+                <Field field="JobRole_Research_Director" selected="True" />
+                <Field field="JobRole_Research_Scientist" selected="True" />
+                <Field field="JobRole_Sales_Executive" selected="True" />
+                <Field field="JobRole_Sales_Representative" selected="True" />
+                <Field field="MaritalStatus_Divorced" selected="True" />
+                <Field field="MaritalStatus_Married" selected="True" />
+                <Field field="MaritalStatus_Single" selected="True" />
+                <Field field="OverTime_No" selected="True" />
+                <Field field="OverTime_Yes" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1314" y="274.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FieldName] != [Name]
+AND
+[Value] != '0'</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-03-25 20:02:27</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-03-25 20:02:27</StartDate>
+                  <EndDate>2019-03-25 20:02:27</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FieldName] != [Name]
+AND
+[Value] != '0'</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1242" y="274.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" type="V_WString" size="256" />
+                <SelectField field="Value" selected="True" size="256" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="128">
+          <GuiSettings>
+            <Position x="1026" y="88.00004" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="fields">Age + DailyRate + DistanceFromHome + Education + EnvironmentSatisfaction + HourlyRate + JobInvolvement + JobLevel + JobSatisfaction + MonthlyIncome + MonthlyRate + NumCompaniesWorked + PercentSalaryHike + PerformanceRating + RelationshipSatisfaction + StandardHours + StockOptionLevel + TotalWorkingYears + TrainingTimesLastYear + WorkLifeBalance + YearsAtCompany + YearsInCurrentRole + YearsSinceLastPromotion + YearsWithCurrManager + BusinessTravel + Department_Human_Resources + Department_Research___Development + Department_Sales + EducationField_Human_Resources + EducationField_Life_Sciences + EducationField_Marketing + EducationField_Medical + EducationField_Other + EducationField_Technical_Degree + Gender_Female + Gender_Male + JobRole_Healthcare_Representative + JobRole_Human_Resources + JobRole_Laboratory_Technician + JobRole_Manager + JobRole_Manufacturing_Director + JobRole_Research_Director + JobRole_Research_Scientist + JobRole_Sales_Executive + JobRole_Sales_Representative + MaritalStatus_Divorced + MaritalStatus_Married + MaritalStatus_Single + OverTime_No + OverTime_Yes</Value>
+              <Value name="scale">False</Value>
+              <Value name="max components">2</Value>
+              <Value name="append pc">True</Value>
+              <Value name="num pc">2</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" source="R-DATA:" type="Int32" />
+                <Field name="Attrition" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Age" source="R-DATA:" type="Int32" />
+                <Field name="DailyRate" source="R-DATA:" type="Int32" />
+                <Field name="DistanceFromHome" source="R-DATA:" type="Int32" />
+                <Field name="Education" source="R-DATA:" type="Int32" />
+                <Field name="EnvironmentSatisfaction" source="R-DATA:" type="Int32" />
+                <Field name="HourlyRate" source="R-DATA:" type="Int32" />
+                <Field name="JobInvolvement" source="R-DATA:" type="Int32" />
+                <Field name="JobLevel" source="R-DATA:" type="Int32" />
+                <Field name="JobSatisfaction" source="R-DATA:" type="Int32" />
+                <Field name="MonthlyIncome" source="R-DATA:" type="Int32" />
+                <Field name="MonthlyRate" source="R-DATA:" type="Int32" />
+                <Field name="NumCompaniesWorked" source="R-DATA:" type="Int32" />
+                <Field name="PercentSalaryHike" source="R-DATA:" type="Int32" />
+                <Field name="PerformanceRating" source="R-DATA:" type="Int32" />
+                <Field name="RelationshipSatisfaction" source="R-DATA:" type="Int32" />
+                <Field name="StandardHours" source="R-DATA:" type="Int32" />
+                <Field name="StockOptionLevel" source="R-DATA:" type="Int32" />
+                <Field name="TotalWorkingYears" source="R-DATA:" type="Int32" />
+                <Field name="TrainingTimesLastYear" source="R-DATA:" type="Int32" />
+                <Field name="WorkLifeBalance" source="R-DATA:" type="Int32" />
+                <Field name="YearsAtCompany" source="R-DATA:" type="Int32" />
+                <Field name="YearsInCurrentRole" source="R-DATA:" type="Int32" />
+                <Field name="YearsSinceLastPromotion" source="R-DATA:" type="Int32" />
+                <Field name="YearsWithCurrManager" source="R-DATA:" type="Int32" />
+                <Field name="BusinessTravel" source="R-DATA:" type="Int32" />
+                <Field name="Department_Human_Resources" source="R-DATA:" type="Int32" />
+                <Field name="Department_Research___Development" source="R-DATA:" type="Int32" />
+                <Field name="Department_Sales" source="R-DATA:" type="Int32" />
+                <Field name="EducationField_Human_Resources" source="R-DATA:" type="Int32" />
+                <Field name="EducationField_Life_Sciences" source="R-DATA:" type="Int32" />
+                <Field name="EducationField_Marketing" source="R-DATA:" type="Int32" />
+                <Field name="EducationField_Medical" source="R-DATA:" type="Int32" />
+                <Field name="EducationField_Other" source="R-DATA:" type="Int32" />
+                <Field name="EducationField_Technical_Degree" source="R-DATA:" type="Int32" />
+                <Field name="Gender_Female" source="R-DATA:" type="Int32" />
+                <Field name="Gender_Male" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Healthcare_Representative" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Human_Resources" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Laboratory_Technician" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Manager" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Manufacturing_Director" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Research_Director" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Research_Scientist" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Sales_Executive" source="R-DATA:" type="Int32" />
+                <Field name="JobRole_Sales_Representative" source="R-DATA:" type="Int32" />
+                <Field name="MaritalStatus_Divorced" source="R-DATA:" type="Int32" />
+                <Field name="MaritalStatus_Married" source="R-DATA:" type="Int32" />
+                <Field name="MaritalStatus_Single" source="R-DATA:" type="Int32" />
+                <Field name="OverTime_No" source="R-DATA:" type="Int32" />
+                <Field name="OverTime_Yes" source="R-DATA:" type="Int32" />
+                <Field name="PC1" source="R-DATA:" type="Double" />
+                <Field name="PC2" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Reports">
+              <RecordInfo>
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="954" y="274.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IIF([Attrition] = 'Yes', 1,0)" field="Attrition" size="3" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Attrition = IIF([Attrition] = 'Yes', 1,0)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1110" y="88" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_16140_5ad8169b12554da99e47d57fea703a76_\Engine_17600_d46488c31bf74681879703078f793a75_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="822" width="97.22276" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DT</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="113">
+          <GuiSettings Plugin="Decision_Tree">
+            <Position x="1060" y="856" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">model</Value>
+              <Value name="curToggle">toggle-split</Value>
+              <Value name="display.static">True</Value>
+              <Value name="set_seed_cv">True</Value>
+              <Value name="showClassificationCV">True</Value>
+              <Value name="showWhenTreePlotAvailable">True</Value>
+              <Value name="use.gini">False</Value>
+              <Value name="use.information">True</Value>
+              <Value name="usesurrogate.0">True</Value>
+              <Value name="usesurrogate.1">False</Value>
+              <Value name="usesurrogate.2">False</Value>
+              <Value name="total.correct">True</Value>
+              <Value name="percent.correct">False</Value>
+              <Value name="model_type">classification</Value>
+              <Value name="auto">False</Value>
+              <Value name="classification">True</Value>
+              <Value name="regression">False</Value>
+              <Value name="tree_summary">Counts</Value>
+              <Value name="Counts">True</Value>
+              <Value name="Proportions">False</Value>
+              <Value name="tree_plot_size">tree.inches</Value>
+              <Value name="tree.inches">True</Value>
+              <Value name="tree.centimeters">False</Value>
+              <Value name="pruning_plot_size">prune.inches</Value>
+              <Value name="prune.inches">True</Value>
+              <Value name="prune.centimeters">False</Value>
+              <Value name="Model Name">DT</Value>
+              <Value name="Y Var">Attrition</Value>
+              <Value name="X Vars">Age,DailyRate,DistanceFromHome,Education,EnvironmentSatisfaction,HourlyRate,JobInvolvement,JobLevel,JobSatisfaction,MonthlyIncome,NumCompaniesWorked,PercentSalaryHike,PerformanceRating,RelationshipSatisfaction,StandardHours,StockOptionLevel,TrainingTimesLastYear,WorkLifeBalance,YearsSinceLastPromotion,YearsWithCurrManager,BusinessTravel,Department_Human_Resources,Department_Research___Development,Department_Sales,EducationField_Human_Resources,EducationField_Life_Sciences,EducationField_Marketing,EducationField_Medical,EducationField_Other,EducationField_Technical_Degree,Gender_Female,Gender_Male,JobRole_Healthcare_Representative,JobRole_Human_Resources,JobRole_Laboratory_Technician,JobRole_Manager,JobRole_Manufacturing_Director,JobRole_Research_Director,JobRole_Research_Scientist,JobRole_Sales_Executive,JobRole_Sales_Representative,MaritalStatus_Divorced,MaritalStatus_Married,MaritalStatus_Single,OverTime_No,OverTime_Yes</Value>
+              <Value name="model.algorithm">rpart</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights" />
+              <Value name="splitting_criteria">use.information</Value>
+              <Value name="surrogate_use">usesurrogate.0</Value>
+              <Value name="surrogate_split_criteria">total.correct</Value>
+              <Value name="min.split">20</Value>
+              <Value name="min.bucket">7</Value>
+              <Value name="xval.folds">10</Value>
+              <Value name="max.depth">20</Value>
+              <Value name="max.bins">
+              </Value>
+              <Value name="set_cp">False</Value>
+              <Value name="cp">0</Value>
+              <Value name="rules">False</Value>
+              <Value name="bands_check">False</Value>
+              <Value name="bands">10</Value>
+              <Value name="subset">False</Value>
+              <Value name="winnow">False</Value>
+              <Value name="GlobalPruning">False</Value>
+              <Value name="fuzzyThreshold">False</Value>
+              <Value name="earlyStopping">False</Value>
+              <Value name="trials">1</Value>
+              <Value name="CF">0.25</Value>
+              <Value name="minCases">2</Value>
+              <Value name="sample">0</Value>
+              <Value name="seed">1</Value>
+              <Value name="use_cv">False</Value>
+              <Value name="numberFolds">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="posClass">
+              </Value>
+              <Value name="stratified">False</Value>
+              <Value name="cv_seed">1</Value>
+              <Value name="tree.plot">False</Value>
+              <Value name="Branch Dist">False</Value>
+              <Value name="tree.in.w">5.5</Value>
+              <Value name="tree.in.h">5.5</Value>
+              <Value name="tree.cm.w">13</Value>
+              <Value name="tree.cm.h">14.95</Value>
+              <Value name="tree.graph.resolution">1x</Value>
+              <Value name="tree.pointsize">8</Value>
+              <Value name="prune.plot">False</Value>
+              <Value name="prune.in.w">5.5</Value>
+              <Value name="prune.in.h">5.5</Value>
+              <Value name="prune.cm.w">13</Value>
+              <Value name="prune.cm.h">14.95</Value>
+              <Value name="prune.graph.resolution">1x</Value>
+              <Value name="prune.pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DT</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" EngineDll="Macro" EngineDllEntryPoint="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="4" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Report" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="error_measures" />
+      <Destination ToolID="133" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="131" Connection="Output" />
+      <Destination ToolID="130" Connection="Models" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Validation" />
+      <Destination ToolID="130" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Estimation" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Interactive" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Reports" />
+      <Destination ToolID="129" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="128" Connection="Data Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>EmployeeChurn</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

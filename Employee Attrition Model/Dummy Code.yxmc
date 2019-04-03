@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="138" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>imput</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Kaggle_HRAnalytics.csv</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Age" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Attrition" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="BusinessTravel" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="DailyRate" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Department" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="DistanceFromHome" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Education" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EducationField" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EmployeeCount" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EmployeeNumber" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="EnvironmentSatisfaction" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="HourlyRate" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobInvolvement" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobLevel" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobRole" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="JobSatisfaction" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="MaritalStatus" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="MonthlyIncome" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="MonthlyRate" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="NumCompaniesWorked" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="Over18" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="OverTime" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="PercentSalaryHike" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="PerformanceRating" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="RelationshipSatisfaction" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="StandardHours" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="StockOptionLevel" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="TotalWorkingYears" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="TrainingTimesLastYear" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="WorkLifeBalance" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsAtCompany" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsInCurrentRole" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsSinceLastPromotion" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+            <Field name="YearsWithCurrManager" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="450" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="462" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="750" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output17</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="248" y="320" width="462" height="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Encode Predictors</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="258" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="EmployeeNumber" />
+              </KeyFields>
+              <DataFields>
+                <Field field="Age" selected="False" />
+                <Field field="Attrition" selected="False" />
+                <Field field="BusinessTravel" selected="False" />
+                <Field field="DailyRate" selected="False" />
+                <Field field="Department" selected="True" />
+                <Field field="DistanceFromHome" selected="False" />
+                <Field field="Education" selected="False" />
+                <Field field="EducationField" selected="True" />
+                <Field field="EmployeeCount" selected="False" />
+                <Field field="EmployeeNumber" selected="False" />
+                <Field field="EnvironmentSatisfaction" selected="False" />
+                <Field field="Gender" selected="True" />
+                <Field field="HourlyRate" selected="False" />
+                <Field field="JobInvolvement" selected="False" />
+                <Field field="JobLevel" selected="False" />
+                <Field field="JobRole" selected="True" />
+                <Field field="JobSatisfaction" selected="False" />
+                <Field field="MaritalStatus" selected="True" />
+                <Field field="MonthlyIncome" selected="False" />
+                <Field field="MonthlyRate" selected="False" />
+                <Field field="NumCompaniesWorked" selected="False" />
+                <Field field="Over18" selected="False" />
+                <Field field="OverTime" selected="True" />
+                <Field field="PercentSalaryHike" selected="False" />
+                <Field field="PerformanceRating" selected="False" />
+                <Field field="RelationshipSatisfaction" selected="False" />
+                <Field field="StandardHours" selected="False" />
+                <Field field="StockOptionLevel" selected="False" />
+                <Field field="TotalWorkingYears" selected="False" />
+                <Field field="TrainingTimesLastYear" selected="False" />
+                <Field field="WorkLifeBalance" selected="False" />
+                <Field field="YearsAtCompany" selected="False" />
+                <Field field="YearsInCurrentRole" selected="False" />
+                <Field field="YearsSinceLastPromotion" selected="False" />
+                <Field field="YearsWithCurrManager" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+                <Field name="Name" size="14" source="Transpose:" type="String" />
+                <Field name="Value" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="426" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Name]+'_'+[Value]" field="Name" size="75" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Name = [Name]+'_'+[Value]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+                <Field name="Name" size="75" source="Formula: [Name]+'_'+[Value]" type="V_String" />
+                <Field name="Value" size="75" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="510" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="EmployeeNumber" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EmployeeNumber" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="594" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>All</FieldType>
+              <Fields orderChanged="False">
+                <Field name="*Unknown" />
+                <Field name="EmployeeNumber" selected="False" />
+                <Field name="RecordID" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>IIF(ISEMPTY([_CurrentField_]),0,1)</Expression>
+              <ChangeFieldType value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IIF(ISEMPTY([_CurrentField_]),0,1)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="EmployeeNumber" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="342" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" type="V_String" size="75" />
+                <SelectField field="Value" selected="True" size="75" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="EmployeeNumber" size="254" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+                <Field name="Name" size="75" source="Transpose:" type="V_String" />
+                <Field name="Value" size="75" source="File: C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="258" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="246" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Question" />
+      <Destination ToolID="14" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (13)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (17)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dummy Code</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateFieldList</Type>
+              <Description />
+              <ToolId value="14" />
+              <Variable />
+              <Destination>1/DataFields</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateFieldList</Type>
+              <Description />
+              <ToolId value="16" />
+              <Variable />
+              <Destination>1/KeyFields</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (11)</Name>
+          <ToolId value="11" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (12)</Description>
+              <Name>Macro Input (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>selecl fields to encode</Description>
+              <Name>List Box (13)</Name>
+              <ToolId value="13" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
+              <Mode>Field</Mode>
+              <Field_ToolId value="0" />
+              <Field_ConnectionName />
+              <Field_Connection />
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>select key fields</Description>
+              <Name>List Box (15)</Name>
+              <ToolId value="15" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
+              <Mode>DW2</Mode>
+              <DW2_Path>C:\Repo\EmployeeChurn\Kaggle_HRAnalytics.csv</DW2_Path>
+              <DW2_Password />
+              <DW2_CachedCosmeticName />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (17)</Name>
+              <ToolId value="17" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
