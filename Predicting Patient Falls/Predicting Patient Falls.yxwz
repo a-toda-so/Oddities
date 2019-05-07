@@ -1,0 +1,1119 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="348" height="624" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Age (single-select)
+ 60 - 69 years (1 point)
+ 70 -79 years (2 points)
+ greater than or equal to 80 years (3 points)
+
+Fall History (single-select)
+ One fall within 6 months before admission (5 points)
+
+Elimination, Bowel and Urine (single-select)
+ Incontinence (2 points)
+ Urgency or frequency (2 points)
+ Urgency/frequency and incontinence (4 points)
+
+Medications: Includes PCA/opiates, anticonvulsants, anti-hypertensives, diuretics, hypnotics,
+laxatives, sedatives, and psychotropics (single-select)
+ On 1 high fall risk drug (3 points)
+ On 2 or more high fall risk drugs (5 points)
+ Sedated procedure within past 24 hours (7 points)
+
+Patient Care Equipment: Any equipment that tethers patient (e.g., IV infusion, chest tube, indwelling
+catheter, SCDs, etc.) (single-select)
+ One present (1 point)
+ Two present (2 points)
+ 3 or more present (3 points)
+
+Mobility (multi-select; choose all that apply and add points together)
+ Requires assistance or supervision for mobility, transfer, or ambulation (2 points)
+ Unsteady gait (2 points)
+ Visual or auditory impairment affecting mobility (2 points)
+
+Cognition (multi-select; choose all that apply and add points together)
+ Altered awareness of immediate physical environment (1 point)
+ Impulsive (2 points)
+ Lack of understanding of one's physical and cognitive limitations (4 points)</Text>
+          <Font name="Segoe UI" size="8.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="204" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="54" width="1188" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Author: Salim Fadel
+Date:4/18/18
+Source:
+John Hopkins: https://www.hopkinsmedicine.org/institute_nursing/models_tools/JHFRAT_acute%20care%20original_6_22_17.pdf</Text>
+          <Font name="Segoe UI" size="8.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="195" g="195" b="195" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="414" y="150" width="1340" height="529.0004" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption />
+          <Style TextColor="#314c4a" FillColor="#000000" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="631.0004" y="438.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" field="Age" size="8" type="Double" />
+                <FormulaField expression="IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" field="Fall History" size="8" type="Double" />
+                <FormulaField expression="IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" field="Elimination, Bowel and Urine" size="8" type="Double" />
+                <FormulaField expression="IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" field="Medications" size="8" type="Double" />
+                <FormulaField expression="IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" field="Patient Care Equipment" size="8" type="Double" />
+                <FormulaField expression="IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" field="Mobility" size="8" type="Double" />
+                <FormulaField expression="IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" field="Cognition" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Age = IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 
+ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Age" source="Formula: IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall History" source="Formula: IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="Formula: IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Medications" source="Formula: IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Patient Care Equipment" source="Formula: IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Mobility" source="Formula: IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Cognition" source="Formula: IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="631.0004" y="595.0004" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" field="Age" size="8" type="Double" />
+                <FormulaField expression="IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" field="Fall History" size="8" type="Double" />
+                <FormulaField expression="IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" field="Elimination, Bowel and Urine" size="8" type="Double" />
+                <FormulaField expression="IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" field="Medications" size="8" type="Double" />
+                <FormulaField expression="IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" field="Patient Care Equipment" size="8" type="Double" />
+                <FormulaField expression="IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" field="Mobility" size="8" type="Double" />
+                <FormulaField expression="IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" field="Cognition" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Age = IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 
+ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Age" source="Formula: IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall History" source="Formula: IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="Formula: IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Medications" source="Formula: IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Patient Care Equipment" source="Formula: IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Mobility" source="Formula: IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Cognition" source="Formula: IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="475.0009" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Patient Fall.xlsx
+Table=`Patient Information Sample$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="475.0003" y="594.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Patient Fall.xlsx
+Table=`Total Patient Information$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings>
+            <Position x="991.0004" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name" />
+              <Value name="select.target">Fall</Value>
+              <Value name="select.predictors">Patient_ID=False,Age=True,Fall History=True,Elimination, Bowel and Urine=True,Medications=True,Patient Care Equipment=True,Mobility=True,Cognition=True,Fall=False</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Patient_ID</Value>
+              <Value name="marginal.plots">False</Value>
+              <Value name="plot.min.importance">2.5</Value>
+              <Value name="type.distribution">False</Value>
+              <Value name="type.continuous">True</Value>
+              <Value name="dist.gaussian">True</Value>
+              <Value name="dist.laplace">False</Value>
+              <Value name="dist.t">False</Value>
+              <Value name="t.df">4</Value>
+              <Value name="type.count">False</Value>
+              <Value name="type.binomial">False</Value>
+              <Value name="dist.bernoulli">True</Value>
+              <Value name="dist.adaboost">False</Value>
+              <Value name="type.multinomial">False</Value>
+              <Value name="n.trees">4000</Value>
+              <Value name="assess.cv">True</Value>
+              <Value name="num.folds">5</Value>
+              <Value name="n.cores">1</Value>
+              <Value name="assess.test">False</Value>
+              <Value name="train.fraction">50.0</Value>
+              <Value name="assess.oob">False</Value>
+              <Value name="bag.fraction">50.0</Value>
+              <Value name="shrinkage">0.0020</Value>
+              <Value name="interaction.depth">1</Value>
+              <Value name="n.minobsinnode">10</Value>
+              <Value name="rand.seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+              <ForceUpdate />
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings>
+            <Position x="1183" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="_externals\2\Score.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+                <Dependency Path="_externals\2\Score_Model.yxdb" Package="True" IsMacro="False" IsOutput="False" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Fall.History" source="R-DATA:" type="Double" />
+                <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
+                <Field name="Medications" source="R-DATA:" type="Double" />
+                <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
+                <Field name="Mobility" source="R-DATA:" type="Double" />
+                <Field name="Cognition" source="R-DATA:" type="Double" />
+                <Field name="Fall" source="R-DATA:" type="Double" />
+                <Field name="Score" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1375" y="438.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" field="Risk of Falling" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Risk of Falling = IF [Score]&gt;=.85  THEN "High Risk" 
+ELSEIF 
+[Score]&gt;=.25 and [S...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Fall.History" source="R-DATA:" type="Double" />
+                <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
+                <Field name="Medications" source="R-DATA:" type="Double" />
+                <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
+                <Field name="Mobility" source="R-DATA:" type="Double" />
+                <Field name="Cognition" source="R-DATA:" type="Double" />
+                <Field name="Fall" source="R-DATA:" type="Double" />
+                <Field name="Score" source="R-DATA:" type="Double" />
+                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1651" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_14464_0df3e9fdfba54ab3877fa129f94d4f8e_\Engine_9616_56888e2463bd4ff2a15855199bd100cd_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings>
+            <Position x="1183" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="_externals\2\Score.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+                <Dependency Path="_externals\2\Score_Model.yxdb" Package="True" IsMacro="False" IsOutput="False" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Fall.History" source="R-DATA:" type="Double" />
+                <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
+                <Field name="Medications" source="R-DATA:" type="Double" />
+                <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
+                <Field name="Mobility" source="R-DATA:" type="Double" />
+                <Field name="Cognition" source="R-DATA:" type="Double" />
+                <Field name="Score" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1375" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" field="Risk of Falling" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <DefaultAnnotationText>Risk of Falling = IF [Score]&gt;=.85  THEN "High Risk" 
+ELSEIF 
+[Score]&gt;=.25 and [S...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Fall.History" source="R-DATA:" type="Double" />
+                <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
+                <Field name="Medications" source="R-DATA:" type="Double" />
+                <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
+                <Field name="Mobility" source="R-DATA:" type="Double" />
+                <Field name="Cognition" source="R-DATA:" type="Double" />
+                <Field name="Score" source="R-DATA:" type="Double" />
+                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1663" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_14464_0df3e9fdfba54ab3877fa129f94d4f8e_\Engine_9616_20fe9324eb684012bb4b791c4825e2d4_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="750.0004" y="199" width="420" height="96" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Predicting Patient Falls</Text>
+              <Font name="Segoe UI" size="14.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="144" b="200" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="774.0004" y="233" width="396" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Early prediction of patients that are at high risk of fall while at a hospital is important in reducing the preventable hospital acquired conditions.</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="144" b="200" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="439.0003" y="327" width="132" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Patient Data</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="582.0002" y="327.0001" width="168" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Creating a scoring system based on John Hopkins Fall Risk Assessment ]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="775.0004" y="327.0001" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Splitting the patient sample data in to training and validation groups to test the model.</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="955.0004" y="327" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Boosted Model</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1135" y="327" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Scoring the validation data to compare it to the actual results</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1327" y="327" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Identifying high, moderate and low risk individuals in the validation group</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1135" y="507" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Scoring the validation data to compare it to the actual results</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="583.0004" y="518.9998" width="168" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Creating a scoring system on the full patient population based on John Hopkins Fall Risk Assessment ]]></Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="439" y="519.0002" width="132" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Full Patient Population</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1327" y="507" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Identifying high, moderate and low risk individuals in the validation group</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1062" y="503" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_14464_0df3e9fdfba54ab3877fa129f94d4f8e_\Engine_9616_ca6df4d0d31b45cd98501a033491e318_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1494" y="359" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Patient_ID" selected="True" />
+                <SelectField field="Risk of Falling" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1578" y="359" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Risk of Falling] = [#1]</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Risk of Falling</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-03 10:14:27</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-05-03 10:14:27</StartDate>
+                  <EndDate>2019-05-03 10:14:27</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Risk of Falling] = [#1]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+            <Position x="1602" y="227" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings>
+            <Position x="774" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">34</Value>
+              <Value name="validation pct">33</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Estimation">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Age" source="Formula: IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall History" source="Formula: IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="Formula: IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Medications" source="Formula: IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Patient Care Equipment" source="Formula: IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Mobility" source="Formula: IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Cognition" source="Formula: IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Validation">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Age" source="Formula: IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall History" source="Formula: IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="Formula: IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Medications" source="Formula: IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Patient Care Equipment" source="Formula: IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Mobility" source="Formula: IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Cognition" source="Formula: IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Holdout">
+              <RecordInfo>
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Age" source="Formula: IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall History" source="Formula: IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="Formula: IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Medications" source="Formula: IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Patient Care Equipment" source="Formula: IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Mobility" source="Formula: IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Cognition" source="Formula: IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" type="Double" />
+                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="18" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="18" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Validation" />
+      <Destination ToolID="14" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Report" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="41" Connection="Question" />
+      <Destination ToolID="39" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Estimation" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (41)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Predicting Patient Falls</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (40)</Name>
+          <ToolId value="40" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Risk of Falls</Description>
+              <Name>List Box (41)</Name>
+              <ToolId value="41" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[Low Risk
+Moderate Risk
+High Risk
+]]></Manual_Values>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="43" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="17" Selected="False" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="20" Selected="False" />
+        <Tool ToolId="36" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
