@@ -1,82 +1,6 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2019.1">
   <Nodes>
-    <Node ToolID="33">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="348" height="624" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>Age (single-select)
- 60 - 69 years (1 point)
- 70 -79 years (2 points)
- greater than or equal to 80 years (3 points)
-
-Fall History (single-select)
- One fall within 6 months before admission (5 points)
-
-Elimination, Bowel and Urine (single-select)
- Incontinence (2 points)
- Urgency or frequency (2 points)
- Urgency/frequency and incontinence (4 points)
-
-Medications: Includes PCA/opiates, anticonvulsants, anti-hypertensives, diuretics, hypnotics,
-laxatives, sedatives, and psychotropics (single-select)
- On 1 high fall risk drug (3 points)
- On 2 or more high fall risk drugs (5 points)
- Sedated procedure within past 24 hours (7 points)
-
-Patient Care Equipment: Any equipment that tethers patient (e.g., IV infusion, chest tube, indwelling
-catheter, SCDs, etc.) (single-select)
- One present (1 point)
- Two present (2 points)
- 3 or more present (3 points)
-
-Mobility (multi-select; choose all that apply and add points together)
- Requires assistance or supervision for mobility, transfer, or ambulation (2 points)
- Unsteady gait (2 points)
- Visual or auditory impairment affecting mobility (2 points)
-
-Cognition (multi-select; choose all that apply and add points together)
- Altered awareness of immediate physical environment (1 point)
- Impulsive (2 points)
- Lack of understanding of one's physical and cognitive limitations (4 points)</Text>
-          <Font name="Segoe UI" size="8.25" style="1" />
-          <TextColor name="Black" />
-          <FillColor r="255" g="255" b="204" />
-          <Shape shape="0" />
-          <Justification Justification="3" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="35">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="414" y="54" width="1188" height="84" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>Author: Salim Fadel
-Date:4/18/18
-Source:
-John Hopkins: https://www.hopkinsmedicine.org/institute_nursing/models_tools/JHFRAT_acute%20care%20original_6_22_17.pdf</Text>
-          <Font name="Segoe UI" size="8.25" style="1" />
-          <TextColor name="Black" />
-          <FillColor r="195" g="195" b="195" />
-          <Shape shape="0" />
-          <Justification Justification="1" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
         <Position x="0" y="0" width="59" height="59" />
@@ -92,12 +16,12 @@ John Hopkins: https://www.hopkinsmedicine.org/institute_nursing/models_tools/JHF
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="414" y="150" width="1340" height="529.0004" />
+        <Position x="407" y="26" width="1052" height="371.0004" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption />
-          <Style TextColor="#314c4a" FillColor="#000000" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Style TextColor="#005e87" FillColor="#005e87" BorderColor="#000000" Transparency="80" Margin="10" />
           <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
@@ -110,7 +34,7 @@ John Hopkins: https://www.hopkinsmedicine.org/institute_nursing/models_tools/JHF
       <ChildNodes>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="631.0004" y="438.9999" />
+            <Position x="609.0005" y="171.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -148,7 +72,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="631.0004" y="595.0004" />
+            <Position x="609.0005" y="328.0004" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -185,7 +109,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="7">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="475.0009" y="439" />
+            <Position x="453.0009" y="172.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -202,9 +126,6 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
 Table=`Patient Information Sample$`</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
@@ -223,7 +144,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="475.0003" y="594.9999" />
+            <Position x="453.0004" y="327.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -240,9 +161,6 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
 Table=`Total Patient Information$`</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
@@ -260,7 +178,7 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="13">
           <GuiSettings>
-            <Position x="991.0004" y="439" />
+            <Position x="969.0005" y="172" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -308,9 +226,6 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Report">
               <RecordInfo>
                 <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
@@ -329,7 +244,7 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="14">
           <GuiSettings>
-            <Position x="1183" y="439" />
+            <Position x="1100" y="191" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -373,7 +288,7 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1375" y="438.9999" />
+            <Position x="1353" y="171.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -406,37 +321,9 @@ ELSEIF
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
         </Node>
-        <Node ToolID="17">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1651" y="439" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_14464_0df3e9fdfba54ab3877fa129f94d4f8e_\Engine_9616_56888e2463bd4ff2a15855199bd100cd_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
         <Node ToolID="18">
           <GuiSettings>
-            <Position x="1183" y="595" />
+            <Position x="1161" y="328" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -479,7 +366,7 @@ ELSEIF
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1375" y="595" />
+            <Position x="1353" y="328" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -511,85 +398,17 @@ ELSEIF
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
         </Node>
-        <Node ToolID="20">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1663" y="595" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_14464_0df3e9fdfba54ab3877fa129f94d4f8e_\Engine_9616_20fe9324eb684012bb4b791c4825e2d4_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="21">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="750.0004" y="199" width="420" height="96" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>Predicting Patient Falls</Text>
-              <Font name="Segoe UI" size="14.25" style="0" />
-              <TextColor name="White" />
-              <FillColor r="0" g="144" b="200" />
-              <Shape shape="0" />
-              <Justification Justification="4" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="22">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="774.0004" y="233" width="396" height="60" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>Early prediction of patients that are at high risk of fall while at a hospital is important in reducing the preventable hospital acquired conditions.</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
-              <FillColor r="0" g="144" b="200" />
-              <Shape shape="3" />
-              <Justification Justification="3" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="439.0003" y="327" width="132" height="72" />
+            <Position x="417.0003" y="96.00002" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>Patient Data</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
-              <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Text>Access Patient Data</Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor name="White" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -601,15 +420,15 @@ ELSEIF
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="582.0002" y="327.0001" width="168" height="72" />
+            <Position x="560.0002" y="84.00022" width="168" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text><![CDATA[Creating a scoring system based on John Hopkins Fall Risk Assessment ]]></Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Text><![CDATA[Create a scoring system based on John Hopkins Fall Risk Assessment ]]></Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -621,15 +440,15 @@ ELSEIF
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="775.0004" y="327.0001" width="144" height="72" />
+            <Position x="753.0005" y="60.00014" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text>Splitting the patient sample data in to training and validation groups to test the model.</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -641,15 +460,15 @@ ELSEIF
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="955.0004" y="327" width="144" height="72" />
+            <Position x="933.0005" y="60" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text>Boosted Model</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -661,15 +480,15 @@ ELSEIF
         </Node>
         <Node ToolID="27">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1135" y="327" width="144" height="72" />
+            <Position x="1113" y="60.00002" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text>Scoring the validation data to compare it to the actual results</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -681,15 +500,15 @@ ELSEIF
         </Node>
         <Node ToolID="28">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1327" y="327" width="144" height="72" />
+            <Position x="1305" y="60" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text>Identifying high, moderate and low risk individuals in the validation group</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -701,15 +520,15 @@ ELSEIF
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1135" y="507" width="144" height="72" />
+            <Position x="1113" y="240" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text>Scoring the validation data to compare it to the actual results</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -721,15 +540,15 @@ ELSEIF
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="583.0004" y="518.9998" width="168" height="72" />
+            <Position x="561.0005" y="251.9998" width="168" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text><![CDATA[Creating a scoring system on the full patient population based on John Hopkins Fall Risk Assessment ]]></Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -741,35 +560,15 @@ ELSEIF
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="439" y="519.0002" width="132" height="72" />
+            <Position x="417" y="252.0003" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Text>Full Patient Population</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
               <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="32">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1327" y="507" width="144" height="72" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>Identifying high, moderate and low risk individuals in the validation group</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="White" />
-              <FillColor r="0" g="168" b="158" />
-              <Shape shape="0" />
+              <Shape shape="3" />
               <Justification Justification="1" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -781,7 +580,7 @@ ELSEIF
         </Node>
         <Node ToolID="36">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1062" y="503" />
+            <Position x="1040" y="236" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -807,95 +606,9 @@ ELSEIF
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
         </Node>
-        <Node ToolID="38">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1494" y="359" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Patient_ID" selected="True" />
-                <SelectField field="Risk of Falling" selected="True" />
-                <SelectField field="*Unknown" selected="False" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="Patient_ID" source="R-DATA:" type="Double" />
-                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="39">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1578" y="359" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>[Risk of Falling] = [#1]</Expression>
-              <Mode>Custom</Mode>
-              <Simple>
-                <Operator>=</Operator>
-                <Field>Risk of Falling</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2019-05-03 10:14:27</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>
-                  </Operand>
-                  <StartDate>2019-05-03 10:14:27</StartDate>
-                  <EndDate>2019-05-03 10:14:27</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>[Risk of Falling] = [#1]</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="True">
-              <RecordInfo>
-                <Field name="Patient_ID" source="R-DATA:" type="Double" />
-                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
-              </RecordInfo>
-            </MetaInfo>
-            <MetaInfo connection="False">
-              <RecordInfo>
-                <Field name="Patient_ID" source="R-DATA:" type="Double" />
-                <Field name="Risk of Falling" size="1073741823" source="Formula: IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" type="V_WString" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="41">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="1602" y="227" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
         <Node ToolID="43">
           <GuiSettings>
-            <Position x="774" y="438" />
+            <Position x="752" y="171" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -908,9 +621,6 @@ ELSEIF
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Estimation">
               <RecordInfo>
                 <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
@@ -955,6 +665,180 @@ ELSEIF
         </Node>
       </ChildNodes>
     </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="17.99983" y="25.99997" width="382" height="548" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Statement</Caption>
+          <Style TextColor="#005e87" FillColor="#005e87" BorderColor="#314c4a" Transparency="80" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="39.99989" y="420.0001" width="348" height="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text />
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+              <BG_Image>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</BG_Image>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="27.99985" y="108.0002" width="362" height="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Copyright (c) 2019 Continuus Technologies ("Continuus").
+All rights reserved.
+
+This software is the confidential and proprietary information
+of Continuus. ("Confidential Information").  You shall not disclose
+such Confidential Information and shall use it only in accordance
+with the terms of the license agreement you entered into with Artisan.
+
+SYNOPSIS
+    Early prediction of patients that are at high risk of fall while at a hospital is important in reducing the preventable hospital acquired conditions.This workflow leverages the Johns Hopkins Fall Risk Assessment Tool and the data generated from it to build likelihood scores for falls. 
+
+AUTHORS
+    Salim Fadel (sfadel@continuus-technologies.com)
+    John Heisler (jheisler@continuus-technologies.com)
+
+DATE | DESCRIPTION | AUTHOR 
+    20180418| Initial development | Salim Fadel
+    20190507| Polish, upload to github, and deployment to Continuus Alteryx Server | John Heisler
+]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="252" g="220" b="209" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="27.99983" y="59.99997" width="362" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Predicting Patient Falls</Text>
+              <Font name="Arial" size="18" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="252" g="220" b="209" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="28.00017" y="540" width="221.1202" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Fall Risk Assessment Tool</Caption>
+              <Style TextColor="#005e87" FillColor="#005e87" BorderColor="#314c4a" Transparency="75" Margin="10" />
+              <Disabled value="True" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="66">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="38.00018" y="574" width="348" height="624" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>https://www.hopkinsmedicine.org/institute_nursing/models_tools/JHFRAT_acute%20care%20original_6_22_17.pdf
+Age (single-select)
+---------------------------------------------------------------------------
+ 60 - 69 years (1 point)
+ 70 -79 years (2 points)
+ greater than or equal to 80 years (3 points)
+
+Fall History (single-select)
+ One fall within 6 months before admission (5 points)
+
+Elimination, Bowel and Urine (single-select)
+ Incontinence (2 points)
+ Urgency or frequency (2 points)
+ Urgency/frequency and incontinence (4 points)
+
+Medications: Includes PCA/opiates, anticonvulsants, anti-hypertensives, diuretics, hypnotics,
+laxatives, sedatives, and psychotropics (single-select)
+ On 1 high fall risk drug (3 points)
+ On 2 or more high fall risk drugs (5 points)
+ Sedated procedure within past 24 hours (7 points)
+
+Patient Care Equipment: Any equipment that tethers patient (e.g., IV infusion, chest tube, indwelling
+catheter, SCDs, etc.) (single-select)
+ One present (1 point)
+ Two present (2 points)
+ 3 or more present (3 points)
+
+Mobility (multi-select; choose all that apply and add points together)
+ Requires assistance or supervision for mobility, transfer, or ambulation (2 points)
+ Unsteady gait (2 points)
+ Visual or auditory impairment affecting mobility (2 points)
+
+Cognition (multi-select; choose all that apply and add points together)
+ Altered awareness of immediate physical environment (1 point)
+ Impulsive (2 points)
+ Lack of understanding of one's physical and cognitive limitations (4 points)</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="252" g="220" b="209" />
+                  <Shape shape="0" />
+                  <Justification Justification="3" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -994,28 +878,8 @@ ELSEIF
       <Destination ToolID="16" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="16" Connection="Output" />
-      <Destination ToolID="17" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="16" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="18" Connection="Output" />
       <Destination ToolID="19" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="19" Connection="Output" />
-      <Destination ToolID="20" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
-    </Connection>
-    <Connection name="#1">
-      <Origin ToolID="41" Connection="Question" />
-      <Destination ToolID="39" Connection="Question" />
     </Connection>
     <Connection>
       <Origin ToolID="43" Connection="Estimation" />
@@ -1038,14 +902,6 @@ ELSEIF
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <Constants>
-      <Constant>
-        <Namespace>Question</Namespace>
-        <Name>List Box (41)</Name>
-        <Value />
-        <IsNumeric value="False" />
-      </Constant>
-    </Constants>
     <MetaInfo>
       <NameIsFileName value="True" />
       <Name>Predicting Patient Falls</Name>
@@ -1075,22 +931,7 @@ ELSEIF
           <Description>Questions</Description>
           <Name>Tab (40)</Name>
           <ToolId value="40" />
-          <Questions>
-            <Question>
-              <Type>ListBox</Type>
-              <Description>Risk of Falls</Description>
-              <Name>List Box (41)</Name>
-              <ToolId value="41" />
-              <Multiple value="True" />
-              <Multiple_Custom value="False" />
-              <Multiple_Default value="False" />
-              <Mode>Manual</Mode>
-              <Manual_Values><![CDATA[Low Risk
-Moderate Risk
-High Risk
-]]></Manual_Values>
-            </Question>
-          </Questions>
+          <Questions />
         </Question>
       </Questions>
       <ModuleType>Wizard</ModuleType>
@@ -1106,9 +947,7 @@ High Risk
         <Tool ToolId="43" Selected="True" />
         <Tool ToolId="13" Selected="True" />
         <Tool ToolId="14" Selected="True" />
-        <Tool ToolId="17" Selected="False" />
         <Tool ToolId="18" Selected="True" />
-        <Tool ToolId="20" Selected="False" />
         <Tool ToolId="36" Selected="False" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
