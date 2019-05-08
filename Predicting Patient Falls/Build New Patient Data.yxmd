@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="42" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="50" />
+          <Fields>
+            <Field name="Location" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Warner, NH</c>
+            </r>
+            <r>
+              <c>East Natchitoches, PA</c>
+            </r>
+            <r>
+              <c>Lyon, WV</c>
+            </r>
+            <r>
+              <c>Willow Run, IL</c>
+            </r>
+            <r>
+              <c>Conyersville, AZ</c>
+            </r>
+            <r>
+              <c>Mount Baker, NY</c>
+            </r>
+            <r>
+              <c>Farmington Lake, OK</c>
+            </r>
+            <r>
+              <c>Martins Corner, TX</c>
+            </r>
+            <r>
+              <c>Pickerel Narrows, MT</c>
+            </r>
+            <r>
+              <c>Willaha, OH</c>
+            </r>
+            <r>
+              <c>Center, MA</c>
+            </r>
+            <r>
+              <c>Spring City, MS</c>
+            </r>
+            <r>
+              <c>Mittenlane, TX</c>
+            </r>
+            <r>
+              <c>East Waterford, ME</c>
+            </r>
+            <r>
+              <c>Coltman, WV</c>
+            </r>
+            <r>
+              <c>Scottsville, KS</c>
+            </r>
+            <r>
+              <c>Hebron, AZ</c>
+            </r>
+            <r>
+              <c>Longview, MA</c>
+            </r>
+            <r>
+              <c>Emerson, MT</c>
+            </r>
+            <r>
+              <c>North Knoxville, AL</c>
+            </r>
+            <r>
+              <c>Momford Landing, IN</c>
+            </r>
+            <r>
+              <c>Ipswich, IA</c>
+            </r>
+            <r>
+              <c>Storms, TX</c>
+            </r>
+            <r>
+              <c>Kalauao, SD</c>
+            </r>
+            <r>
+              <c>Farwell, FL</c>
+            </r>
+            <r>
+              <c>Brentwood Village, MT</c>
+            </r>
+            <r>
+              <c>Wilhelm Park, MT</c>
+            </r>
+            <r>
+              <c>Bannister Acres, NC</c>
+            </r>
+            <r>
+              <c>Bent Pine, VA</c>
+            </r>
+            <r>
+              <c>Mitchell, AZ</c>
+            </r>
+            <r>
+              <c>Social Circle, MO</c>
+            </r>
+            <r>
+              <c>Kreutzberg, NY</c>
+            </r>
+            <r>
+              <c>Cimarron, WA</c>
+            </r>
+            <r>
+              <c>Brookhaven, DC</c>
+            </r>
+            <r>
+              <c>Montverde Junction, NJ</c>
+            </r>
+            <r>
+              <c>Midland City, AK</c>
+            </r>
+            <r>
+              <c>Sacramento, ME</c>
+            </r>
+            <r>
+              <c>Del Rey Oaks, RI</c>
+            </r>
+            <r>
+              <c>Coal Creek, OK</c>
+            </r>
+            <r>
+              <c>Rabbitown, TN</c>
+            </r>
+            <r>
+              <c>Fairland, GA</c>
+            </r>
+            <r>
+              <c>Gaskil, DE</c>
+            </r>
+            <r>
+              <c>Morgan Mill, OK</c>
+            </r>
+            <r>
+              <c>Merrimac South, AL</c>
+            </r>
+            <r>
+              <c>Stanardsville, NH</c>
+            </r>
+            <r>
+              <c>Two Brooks, WI</c>
+            </r>
+            <r>
+              <c>Curriers, NM</c>
+            </r>
+            <r>
+              <c>Skookumchuck, VA</c>
+            </r>
+            <r>
+              <c>Edgerton, RI</c>
+            </r>
+            <r>
+              <c>Slater, MO</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="330" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Location</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Location</RootName>
+          <Delimeters value="," />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Location" selected="False" />
+            <SelectField field="Location1" selected="True" rename="Facility" type="V_WString" size="200" />
+            <SelectField field="Location2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="810" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Patient Fall New Data.xlsx
+Table=Patients</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Patient Fall.xlsx
+Table=`Total Patient Information$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+            <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="234" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>HospitalID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Facility] +&quot; Hospital&quot;" field="Facility" size="200" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Facility = [Facility] +" Hospital"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="522" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Patient_ID</UpdateField_Name>
+          <CreateField_Name>HospitalID</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF([Row-1:HospitalID]&lt;= [Max_HospitalID],[Row-1:HospitalID]+1,1)</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF([Row-1:HospitalID]&lt;= [Max_HospitalID],[Row-1:HospitalID]+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="330" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="HospitalID" action="Max" rename="Max_HospitalID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="426" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Patient_ID" selected="True" />
+            <SelectField field="HospitalID" selected="True" rename="Hospital_ID" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="Fall History" selected="True" />
+            <SelectField field="Elimination, Bowel and Urine" selected="True" />
+            <SelectField field="Medications" selected="True" />
+            <SelectField field="Patient Care Equipment" selected="True" />
+            <SelectField field="Mobility" selected="True" />
+            <SelectField field="Cognition" selected="True" />
+            <SelectField field="Max_HospitalID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="714" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Hospital_ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="HospitalID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Patient_ID" selected="True" input="Left_" />
+                <SelectField field="Right_Facility" selected="True" input="Right_" />
+                <SelectField field="Left_Hospital_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Fall History" selected="True" input="Left_" />
+                <SelectField field="Left_Elimination, Bowel and Urine" selected="True" input="Left_" />
+                <SelectField field="Left_Medications" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Care Equipment" selected="True" input="Left_" />
+                <SelectField field="Left_Mobility" selected="True" input="Left_" />
+                <SelectField field="Left_Cognition" selected="True" input="Left_" />
+                <SelectField field="Right_HospitalID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="138" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Number">False</Value>
+          <Value name="NNumber">1000</Value>
+          <Value name="Percent">True</Value>
+          <Value name="NPercent">30</Value>
+          <Value name="Deterministic">False</Value>
+          <Value name="Seed">458676342</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="RandomRecords.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Build New Patient Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
