@@ -8,7 +8,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Repo\Oddities\Employee Attrition Model\DataBig.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Repo\EmployeeChurn\DataBig.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -25,21 +25,18 @@
           <DefaultAnnotationText>DataBig.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="satisfactionLevel" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="lastEvaluation" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="numberOfProjects" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="averageMontlyHours" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="timeAtCompany" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="workAccident" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="attrition" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="promotionInLast5years" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="department" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
-            <Field name="salary" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
+            <Field name="satisfactionLevel" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="lastEvaluation" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="numberOfProjects" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="averageMontlyHours" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="timeAtCompany" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="workAccident" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="attrition" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="promotionInLast5years" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="department" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
+            <Field name="salary" size="254" source="File: C:\Repo\EmployeeChurn\DataBig.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -488,7 +485,7 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_267ab599e3eb4fb28638057451ae4f48_.yxdb</TempFile>
+                  <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_4988_d9d2bdc0f16c4391a4a219d18ac05d8b_\Engine_6832_589e5e72912a42d79a2c02790235800c_.yxdb</TempFile>
                   <TempFileDataProfiling />
                   <Layout>
                     <ViewMode>Single</ViewMode>
@@ -1064,7 +1061,7 @@ ELSEI...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_dea6442f6a56495a86945b979d00924a_.yxdb</TempFile>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_4988_d9d2bdc0f16c4391a4a219d18ac05d8b_\Engine_6832_df6d62edc8f4434fb7c0ff912da5a05b_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1114,7 +1111,7 @@ ELSEI...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_abefa0c4e40a4ec69b08da49eb4040b6_.yxdb</TempFile>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_4988_d9d2bdc0f16c4391a4a219d18ac05d8b_\Engine_6832_57ccf89f77644e7d8eb4a769190a8f76_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1142,7 +1139,7 @@ ELSEI...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_3152e63caa834445a483dfd0d764eb00_.yxdb</TempFile>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_4988_d9d2bdc0f16c4391a4a219d18ac05d8b_\Engine_6832_1e5fa0358e4241ae89ea960172e2b267_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
