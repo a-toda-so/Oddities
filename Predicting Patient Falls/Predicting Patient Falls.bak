@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="443" y="54.00001" width="1173" height="341.0007" />
+        <Position x="443" y="53.99998" width="1217" height="375.0015" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -34,7 +34,7 @@
       <ChildNodes>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="609.001" y="326.0007" />
+            <Position x="609.001" y="360.0015" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -56,9 +56,9 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Facility" size="255" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="V_String" />
-                <Field name="Hospital_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Facility" size="255" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="V_String" />
+                <Field name="Hospital_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
                 <Field name="Age" source="Formula: IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" type="Double" />
                 <Field name="Fall History" source="Formula: IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" type="Double" />
                 <Field name="Elimination, Bowel and Urine" source="Formula: IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" type="Double" />
@@ -73,12 +73,12 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="486.0004" y="326.0001" />
+            <Position x="486.0004" y="360.0007" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients</File>
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`</File>
               <FormatSpecificOptions>
                 <FirstRowData>False</FirstRowData>
                 <ImportLine>1</ImportLine>
@@ -87,7 +87,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
             <Annotation DisplayMode="2">
               <Name />
               <DefaultAnnotationText>Patient Fall New Data.xlsx
-Table=Patients</DefaultAnnotationText>
+Table=`Patients$`</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <Dependencies>
@@ -95,16 +95,16 @@ Table=Patients</DefaultAnnotationText>
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Facility" size="255" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="V_String" />
-                <Field name="Hospital_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
-                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall New Data.xlsx|||Patients" type="Double" />
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Facility" size="255" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="V_String" />
+                <Field name="Hospital_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
+                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -112,7 +112,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="561.001" y="248.9997" width="168" height="72" />
+            <Position x="561.001" y="282.9998" width="168" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -132,7 +132,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="453" y="246.9996" width="132" height="72" />
+            <Position x="453" y="281.0002" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -152,7 +152,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="479.0002" y="157.9999" />
+            <Position x="479.0007" y="192.0003" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -179,7 +179,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings>
-            <Position x="815.0002" y="313.9995" />
+            <Position x="815.0002" y="348.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -222,7 +222,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1007" y="313.9998" />
+            <Position x="995" y="347.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -251,7 +251,7 @@ ELSEIF
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="768.0002" y="231" width="144" height="72" />
+            <Position x="768.0002" y="265.0005" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -271,7 +271,7 @@ ELSEIF
         </Node>
         <Node ToolID="93">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1079" y="313.9998" />
+            <Position x="1079" y="347.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -303,7 +303,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="96">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-            <Position x="1163" y="313.9998" />
+            <Position x="1163" y="347.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -348,7 +348,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="99">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="911.0002" y="313.9997" />
+            <Position x="911.0002" y="348.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -386,7 +386,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="102">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
-            <Position x="1259" y="313.9998" />
+            <Position x="1259" y="347.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -425,7 +425,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="104">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-            <Position x="1547" y="313.9998" />
+            <Position x="1547" y="347.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -466,7 +466,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="105">
           <GuiSettings>
-            <Position x="1355" y="313.9998" />
+            <Position x="1355" y="347.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -498,7 +498,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-            <Position x="1547" y="229.9998" />
+            <Position x="1547" y="263.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -507,8 +507,11 @@ Probability - Descending</DefaultAnnotationText>
               <DataField>Table</DataField>
               <Separator>Continuous</Separator>
               <EmbedDependencies value="False" />
-              <ShowHeader value="False" />
+              <ShowHeader value="True" />
+              <HeaderField>Header</HeaderField>
               <ShowFooter value="False" />
+              <OnFirstPage value="False" />
+              <HeaderFooterEdge Distance="0" />
               <PortraitMode value="True" />
               <PaperType Width="612" Height="792" Left="0" Right="0" Top="0" Bottom="0" />
               <DefaultStyles>
@@ -530,7 +533,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="107">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1451" y="241.9998" />
+            <Position x="1451" y="275.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -577,7 +580,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="455" y="88.00001" width="132" height="72" />
+            <Position x="454.9999" y="122.0005" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -597,10 +600,90 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="112">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="1439" y="126" width="59" height="59" />
+            <Position x="1439" y="160" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="114">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="954" y="280" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>CLean up and format</Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="115">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1218" y="280" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Build Report</Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1506" y="184" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Display and write output</Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1398" y="87.99998" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Enable end user to select what hospital they want to see ]]></Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
             <Annotation DisplayMode="0">
               <Name />
               <DefaultAnnotationText />
