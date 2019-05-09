@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="407" y="26.00002" width="918.0001" height="863" />
+        <Position x="443.0005" y="30.00011" width="953.9996" height="886.9999" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -21,32 +21,7 @@
       <ChildNodes>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="633.0007" y="212" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 &#xA;ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2&#xA;ELSEIF [Age] &gt;=80 THEN 3&#xA;ELSE 0 ENDIF" field="Age" size="8" type="Double" />
-                <FormulaField expression="IF [Fall History] = 0 THEN 0 ELSE 5 ENDIF" field="Fall History" size="8" type="Double" />
-                <FormulaField expression="IF [Elimination, Bowel and Urine] = 1 THEN 2 &#xA;ELSEIF [Elimination, Bowel and Urine] =  2 THEN 4&#xA;ELSE 0 ENDIF" field="Elimination, Bowel and Urine" size="8" type="Double" />
-                <FormulaField expression="IF [Medications] = 1 THEN 3 &#xA;ELSEIF [Medications] =  2 THEN 5&#xA;ELSEIF [Medications] =  3 THEN 7&#xA;ELSE 0 ENDIF" field="Medications" size="8" type="Double" />
-                <FormulaField expression="IF [Patient Care Equipment] = 1 THEN 1 &#xA;ELSEIF [Patient Care Equipment] =  2 THEN 2&#xA;ELSEIF [Patient Care Equipment] =  3 THEN 3&#xA;ELSE 0 ENDIF" field="Patient Care Equipment" size="8" type="Double" />
-                <FormulaField expression="IF [Mobility] = 1 THEN 2 &#xA;ELSEIF [Mobility] =  2 THEN 4&#xA;ELSEIF [Mobility] =  3 THEN 6&#xA;ELSE 0 ENDIF" field="Mobility" size="8" type="Double" />
-                <FormulaField expression="IF [Cognition] = 1 THEN 1 &#xA;ELSEIF [Cognition] =  2 THEN 3&#xA;ELSEIF [Cognition] =  3 THEN 6&#xA;ELSE 0 ENDIF" field="Cognition" size="8" type="Double" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="2">
-              <Name />
-              <DefaultAnnotationText>Age = IF [Age] &gt;=60 and [Age]&lt;=69 THEN 1 
-ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="5">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="573.0007" y="440.0002" />
+            <Position x="669.0008" y="240" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -71,12 +46,12 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="7">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="450.0003" y="211.9995" />
+            <Position x="486.0004" y="239.9996" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`</File>
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`</File>
               <FormatSpecificOptions>
                 <FirstRowData>False</FirstRowData>
                 <ImportLine>1</ImportLine>
@@ -88,51 +63,20 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
 Table=`Patient Information Sample$`</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
-        </Node>
-        <Node ToolID="8">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="450.0001" y="439.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Passwords />
-              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`</File>
-              <FormatSpecificOptions>
-                <FirstRowData>False</FirstRowData>
-                <ImportLine>1</ImportLine>
-              </FormatSpecificOptions>
-            </Configuration>
-            <Annotation DisplayMode="2">
-              <Name />
-              <DefaultAnnotationText>Patient Fall.xlsx
-Table=`Total Patient Information$`</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
-                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Patient Fall.xlsx|||`Total Patient Information$`" type="Double" />
+                <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Age" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Fall History" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Elimination, Bowel and Urine" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Medications" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Patient Care Equipment" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Mobility" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Cognition" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
+                <Field name="Fall" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -140,7 +84,7 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="417.0004" y="134.0002" width="132" height="72" />
+            <Position x="453.0005" y="162.0004" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -160,7 +104,7 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="584.0005" y="124.0003" width="168" height="72" />
+            <Position x="620.0007" y="152.0004" width="168" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -178,49 +122,9 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
             </Annotation>
           </Properties>
         </Node>
-        <Node ToolID="30">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="525.0005" y="362.9999" width="168" height="72" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text><![CDATA[Creating a scoring system on the full patient population based on John Hopkins Fall Risk Assessment ]]></Text>
-              <Font name="Segoe UI" size="9.75" style="0" />
-              <TextColor r="0" g="94" b="135" />
-              <FillColor r="0" g="168" b="158" />
-              <Shape shape="3" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="31">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="417" y="361.0005" width="132" height="72" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>Full Patient Population</Text>
-              <Font name="Segoe UI" size="9.75" style="0" />
-              <TextColor r="0" g="94" b="135" />
-              <FillColor r="0" g="168" b="158" />
-              <Shape shape="3" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="546.0002" y="212.0002" />
+            <Position x="582.0004" y="240.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -239,317 +143,9 @@ Table=`Total Patient Information$`</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
-        <Node ToolID="87">
-          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="582.0001" y="583.9999" width="122.5457" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Caption>old dev</Caption>
-              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-              <Disabled value="True" />
-              <Folded value="True" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <ChildNodes>
-            <Node ToolID="13">
-              <GuiSettings>
-                <Position x="643.0001" y="745" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Value name="model.name" />
-                  <Value name="select.target">Fall</Value>
-                  <Value name="select.predictors">Patient_ID=False,Age=True,Fall History=True,Elimination, Bowel and Urine=True,Medications=True,Patient Care Equipment=True,Mobility=True,Cognition=True,Fall=False</Value>
-                  <Value name="use.weights">False</Value>
-                  <Value name="select.weights">Patient_ID</Value>
-                  <Value name="marginal.plots">False</Value>
-                  <Value name="plot.min.importance">2.5</Value>
-                  <Value name="type.distribution">False</Value>
-                  <Value name="type.continuous">True</Value>
-                  <Value name="dist.gaussian">True</Value>
-                  <Value name="dist.laplace">False</Value>
-                  <Value name="dist.t">False</Value>
-                  <Value name="t.df">4</Value>
-                  <Value name="type.count">False</Value>
-                  <Value name="type.binomial">False</Value>
-                  <Value name="dist.bernoulli">True</Value>
-                  <Value name="dist.adaboost">False</Value>
-                  <Value name="type.multinomial">False</Value>
-                  <Value name="n.trees">4000</Value>
-                  <Value name="assess.cv">True</Value>
-                  <Value name="num.folds">5</Value>
-                  <Value name="n.cores">1</Value>
-                  <Value name="assess.test">False</Value>
-                  <Value name="train.fraction">50.0</Value>
-                  <Value name="assess.oob">False</Value>
-                  <Value name="bag.fraction">50.0</Value>
-                  <Value name="shrinkage">0.0020</Value>
-                  <Value name="interaction.depth">1</Value>
-                  <Value name="n.minobsinnode">10</Value>
-                  <Value name="rand.seed">1</Value>
-                  <Value name="inches">True</Value>
-                  <Value name="in.w">5.50</Value>
-                  <Value name="in.h">5.50</Value>
-                  <Value name="centimeters">False</Value>
-                  <Value name="cm.w">13.00</Value>
-                  <Value name="cm.h">14.95</Value>
-                  <Value name="graph.resolution">1x</Value>
-                  <Value name="pointsize">10</Value>
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-              <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
-            </Node>
-            <Node ToolID="14">
-              <GuiSettings>
-                <Position x="773.9996" y="764.0001" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Value name="score field">Score</Value>
-                  <Value name="is oversampled">False</Value>
-                  <Value name="oversampled value" />
-                  <Value name="original percent">2.0</Value>
-                  <Value name="log y">False</Value>
-                  <Value name="prediction.interval">False</Value>
-                  <Value name="interval.level">95</Value>
-                  <Value name="append.xdf">False</Value>
-                  <Value name="num.records">256000</Value>
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-                <Dependencies>
-                  <Implicit>
-                    <Dependency Path="_externals\2\Score.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
-                    <Dependency Path="_externals\2\Score_Model.yxdb" Package="True" IsMacro="False" IsOutput="False" IsAlias="False" />
-                  </Implicit>
-                </Dependencies>
-                <MetaInfo connection="Output">
-                  <RecordInfo>
-                    <Field name="Patient_ID" source="R-DATA:" type="Double" />
-                    <Field name="Age" source="R-DATA:" type="Double" />
-                    <Field name="Fall.History" source="R-DATA:" type="Double" />
-                    <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
-                    <Field name="Medications" source="R-DATA:" type="Double" />
-                    <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
-                    <Field name="Mobility" source="R-DATA:" type="Double" />
-                    <Field name="Cognition" source="R-DATA:" type="Double" />
-                    <Field name="Fall" source="R-DATA:" type="Double" />
-                    <Field name="Score" source="R-DATA:" type="Double" />
-                  </RecordInfo>
-                </MetaInfo>
-              </Properties>
-              <EngineSettings Macro="Predictive Tools\Score.yxmc" />
-            </Node>
-            <Node ToolID="16">
-              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-                <Position x="1027" y="744.9999" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <FormulaFields>
-                    <FormulaField expression="IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" field="Risk of Falling" size="1073741823" type="V_WString" />
-                  </FormulaFields>
-                </Configuration>
-                <Annotation DisplayMode="2">
-                  <Name />
-                  <DefaultAnnotationText>Risk of Falling = IF [Score]&gt;=.85  THEN "High Risk" 
-ELSEIF 
-[Score]&gt;=.25 and [S...</DefaultAnnotationText>
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-            </Node>
-            <Node ToolID="18">
-              <GuiSettings>
-                <Position x="834.9996" y="900.9999" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Value name="score field">Score</Value>
-                  <Value name="is oversampled">False</Value>
-                  <Value name="oversampled value" />
-                  <Value name="original percent">2.0</Value>
-                  <Value name="log y">False</Value>
-                  <Value name="prediction.interval">False</Value>
-                  <Value name="interval.level">95</Value>
-                  <Value name="append.xdf">False</Value>
-                  <Value name="num.records">256000</Value>
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-                <Dependencies>
-                  <Implicit>
-                    <Dependency Path="_externals\2\Score.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
-                    <Dependency Path="_externals\2\Score_Model.yxdb" Package="True" IsMacro="False" IsOutput="False" IsAlias="False" />
-                  </Implicit>
-                </Dependencies>
-                <MetaInfo connection="Output">
-                  <RecordInfo>
-                    <Field name="Patient_ID" source="R-DATA:" type="Double" />
-                    <Field name="Age" source="R-DATA:" type="Double" />
-                    <Field name="Fall.History" source="R-DATA:" type="Double" />
-                    <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
-                    <Field name="Medications" source="R-DATA:" type="Double" />
-                    <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
-                    <Field name="Mobility" source="R-DATA:" type="Double" />
-                    <Field name="Cognition" source="R-DATA:" type="Double" />
-                    <Field name="Score" source="R-DATA:" type="Double" />
-                  </RecordInfo>
-                </MetaInfo>
-              </Properties>
-              <EngineSettings Macro="Predictive Tools\Score.yxmc" />
-            </Node>
-            <Node ToolID="19">
-              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-                <Position x="1027" y="900.9999" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <FormulaFields>
-                    <FormulaField expression="IF [Score]&gt;=.85  THEN &quot;High Risk&quot; &#xA;ELSEIF &#xA;[Score]&gt;=.25 and [Score]&lt;.85 THEN &quot;Moderate Risk&quot; &#xA;ELSE &quot;Low Risk&quot; ENDIF" field="Risk of Falling" size="1073741823" type="V_WString" />
-                  </FormulaFields>
-                </Configuration>
-                <Annotation DisplayMode="2">
-                  <Name />
-                  <DefaultAnnotationText>Risk of Falling = IF [Score]&gt;=.85  THEN "High Risk" 
-ELSEIF 
-[Score]&gt;=.25 and [S...</DefaultAnnotationText>
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-            </Node>
-            <Node ToolID="26">
-              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="607.0001" y="633.0001" width="144" height="72" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Text>Boosted Model</Text>
-                  <Font name="Segoe UI" size="9.75" style="0" />
-                  <TextColor r="0" g="94" b="135" />
-                  <FillColor r="0" g="168" b="158" />
-                  <Shape shape="3" />
-                  <Justification Justification="1" />
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-            </Node>
-            <Node ToolID="27">
-              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="786.9996" y="632.9999" width="144" height="72" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Text>Scoring the validation data to compare it to the actual results</Text>
-                  <Font name="Segoe UI" size="9.75" style="0" />
-                  <TextColor r="0" g="94" b="135" />
-                  <FillColor r="0" g="168" b="158" />
-                  <Shape shape="3" />
-                  <Justification Justification="1" />
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-            </Node>
-            <Node ToolID="28">
-              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="978.9996" y="633" width="144" height="72" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Text>Identifying high, moderate and low risk individuals in the validation group</Text>
-                  <Font name="Segoe UI" size="9.75" style="0" />
-                  <TextColor r="0" g="94" b="135" />
-                  <FillColor r="0" g="168" b="158" />
-                  <Shape shape="3" />
-                  <Justification Justification="1" />
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-            </Node>
-            <Node ToolID="29">
-              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="786.9996" y="812.9999" width="144" height="72" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Text>Scoring the validation data to compare it to the actual results</Text>
-                  <Font name="Segoe UI" size="9.75" style="0" />
-                  <TextColor r="0" g="94" b="135" />
-                  <FillColor r="0" g="168" b="158" />
-                  <Shape shape="3" />
-                  <Justification Justification="1" />
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-            </Node>
-            <Node ToolID="36">
-              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="713.9996" y="808.9999" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_14464_0df3e9fdfba54ab3877fa129f94d4f8e_\Engine_9616_ca6df4d0d31b45cd98501a033491e318_.yxdb</TempFile>
-                  <TempFileDataProfiling />
-                  <Layout>
-                    <ViewMode>Single</ViewMode>
-                    <ViewSize value="100" />
-                    <View1>
-                      <DefaultTab>Report</DefaultTab>
-                      <Hints>
-                        <Table />
-                      </Hints>
-                    </View1>
-                    <View2 />
-                  </Layout>
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-            </Node>
-          </ChildNodes>
-        </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="752.0001" y="60.00002" width="563" height="819" />
+            <Position x="788.0002" y="64.00011" width="598.9999" height="842.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -567,7 +163,7 @@ ELSEIF
           <ChildNodes>
             <Node ToolID="68">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="928.0001" y="646" width="95.46853" height="103" />
+                <Position x="988.0001" y="674" width="95.46853" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -585,7 +181,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="67">
                   <GuiSettings>
-                    <Position x="938.0001" y="680" />
+                    <Position x="998.0001" y="708" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -615,9 +211,6 @@ ELSEIF
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
-                    <Dependencies>
-                      <Implicit />
-                    </Dependencies>
                   </Properties>
                   <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
                 </Node>
@@ -625,7 +218,7 @@ ELSEIF
             </Node>
             <Node ToolID="70">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="928.0001" y="526" width="97.22276" height="103" />
+                <Position x="988.0003" y="554" width="97.22276" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -643,7 +236,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="69">
                   <GuiSettings Plugin="Decision_Tree">
-                    <Position x="938.0001" y="560" />
+                    <Position x="998.0003" y="588" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -739,7 +332,7 @@ ELSEIF
             </Node>
             <Node ToolID="72">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="928.0002" y="178" width="109.9672" height="103" />
+                <Position x="988.0004" y="206" width="109.9672" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -757,7 +350,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="71">
                   <GuiSettings Plugin="Logistic_Regression">
-                    <Position x="938.0002" y="212" />
+                    <Position x="998.0004" y="240" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -802,7 +395,7 @@ ELSEIF
             </Node>
             <Node ToolID="74">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="928.0001" y="406" width="127.8416" height="103" />
+                <Position x="988.0003" y="434" width="127.8416" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -820,7 +413,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="73">
                   <GuiSettings>
-                    <Position x="938.0001" y="440" />
+                    <Position x="998.0003" y="468" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -851,9 +444,6 @@ ELSEIF
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
-                    <Dependencies>
-                      <Implicit />
-                    </Dependencies>
                   </Properties>
                   <EngineSettings Macro="Predictive Tools\Neural_Network.yxmc" />
                 </Node>
@@ -861,7 +451,7 @@ ELSEIF
             </Node>
             <Node ToolID="78">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="1070" y="152" width="235" height="115" />
+                <Position x="1142" y="180" width="235" height="115" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -879,7 +469,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="76">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-                    <Position x="1080" y="198" />
+                    <Position x="1152" y="226" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -898,7 +488,7 @@ ELSEIF
                 </Node>
                 <Node ToolID="88">
                   <GuiSettings>
-                    <Position x="1152" y="186" />
+                    <Position x="1224" y="214" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -909,9 +499,6 @@ ELSEIF
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
-                    <Dependencies>
-                      <Implicit />
-                    </Dependencies>
                     <MetaInfo connection="predictions">
                       <RecordInfo>
                         <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -944,11 +531,11 @@ ELSEIF
                 </Node>
                 <Node ToolID="90">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="1236" y="186" />
+                    <Position x="1308" y="214" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_10892_899527574b244958829f4c77cf4ef445_\Engine_10364_42103ae99b844ad4bebc64c88f326ee9_.yxdb</TempFile>
+                      <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_3444_96af06dcb5d14ac8afc23caa5ac3e58a_\Engine_13156_dc155d368e8c4322b93d5b6441ae8afe_.yxdb</TempFile>
                       <TempFileDataProfiling />
                       <Layout>
                         <ViewMode>Single</ViewMode>
@@ -974,7 +561,7 @@ ELSEIF
             </Node>
             <Node ToolID="80">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="928.0001" y="298" width="161.9246" height="103" />
+                <Position x="988.0003" y="326.0001" width="161.9246" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -992,7 +579,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="79">
                   <GuiSettings>
-                    <Position x="938.0001" y="332" />
+                    <Position x="998.0003" y="360.0001" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1040,9 +627,6 @@ ELSEIF
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
-                    <Dependencies>
-                      <Implicit />
-                    </Dependencies>
                   </Properties>
                   <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
                 </Node>
@@ -1050,7 +634,7 @@ ELSEIF
             </Node>
             <Node ToolID="82">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="772.0001" y="178.0001" width="133.3311" height="103" />
+                <Position x="808.0002" y="206.0002" width="133.3311" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1068,7 +652,7 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="81">
                   <GuiSettings>
-                    <Position x="782.0001" y="212.0001" />
+                    <Position x="818.0002" y="240.0002" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1088,7 +672,7 @@ ELSEIF
             </Node>
             <Node ToolID="84">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="928.0007" y="766" width="107.2778" height="103" />
+                <Position x="988.001" y="794" width="107.2778" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1106,13 +690,13 @@ ELSEIF
               <ChildNodes>
                 <Node ToolID="83">
                   <GuiSettings>
-                    <Position x="938.0007" y="800" />
+                    <Position x="998.001" y="828" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
                       <Value name="model.name">SVM</Value>
                       <Value name="select.target">Fall</Value>
-                      <Value name="select.predictors">Patient_ID=False,Age=True,Fall History=True,Elimination, Bowel and Urine=True,Medications=True,Patient Care Equipment=True,Mobility=True,Cognition=True,Fall=False</Value>
+                      <Value name="select.predictors">Patient_ID=False,Age=False,Fall History=False,Elimination, Bowel and Urine=False,Medications=False,Patient Care Equipment=False,Mobility=False,Cognition=False,Fall=False</Value>
                       <Value name="type.classification">True</Value>
                       <Value name="class.c">True</Value>
                       <Value name="class.nu">False</Value>
@@ -1187,11 +771,11 @@ ELSEIF
             </Node>
             <Node ToolID="25">
               <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="762.0001" y="94.00002" width="144" height="72" />
+                <Position x="798.0002" y="98.00011" width="144" height="72" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <Text>Splitting the patient sample data in to training and validation groups to test the model.</Text>
+                  <Text>Split data into train and test sets</Text>
                   <Font name="Segoe UI" size="9.75" style="0" />
                   <TextColor r="0" g="94" b="135" />
                   <FillColor r="0" g="168" b="158" />
@@ -1207,7 +791,7 @@ ELSEIF
             </Node>
             <Node ToolID="91">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-                <Position x="1146" y="320" />
+                <Position x="1218" y="348.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1224,11 +808,68 @@ ELSEIF
                   <DefaultAnnotationText>BoostedModel.yxdb</DefaultAnnotationText>
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
               </Properties>
               <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+            <Node ToolID="92">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="966" y="102" width="144" height="72" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Build our models</Text>
+                  <Font name="Segoe UI" size="9.75" style="0" />
+                  <TextColor r="0" g="94" b="135" />
+                  <FillColor r="0" g="168" b="158" />
+                  <Shape shape="3" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="93">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1146" y="102" width="144" height="72" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Compare all models and select</Text>
+                  <Font name="Segoe UI" size="9.75" style="0" />
+                  <TextColor r="0" g="94" b="135" />
+                  <FillColor r="0" g="168" b="158" />
+                  <Shape shape="3" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="94">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1170" y="294.0001" width="144" height="72" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Save Boosted for Production</Text>
+                  <Font name="Segoe UI" size="9.75" style="0" />
+                  <TextColor r="0" g="94" b="135" />
+                  <FillColor r="0" g="168" b="158" />
+                  <Shape shape="3" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
             </Node>
           </ChildNodes>
         </Node>
@@ -1236,7 +877,7 @@ ELSEIF
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="17.99982" y="25.99997" width="382" height="548" />
+        <Position x="54" y="54" width="382" height="548" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1254,7 +895,7 @@ ELSEIF
       <ChildNodes>
         <Node ToolID="44">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="39.99989" y="420.0001" width="348" height="104" />
+            <Position x="76.00007" y="448.0001" width="348" height="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1275,7 +916,7 @@ ELSEIF
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="27.99983" y="108.0002" width="362" height="306" />
+            <Position x="64.00001" y="136.0002" width="362" height="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1313,7 +954,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="27.99982" y="59.99997" width="362" height="36" />
+            <Position x="64" y="88" width="362" height="36" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1333,7 +974,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="28.00015" y="540" width="221.1202" height="24" />
+            <Position x="64.00033" y="568" width="221.1202" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1351,7 +992,7 @@ DATE | DESCRIPTION | AUTHOR
           <ChildNodes>
             <Node ToolID="66">
               <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="38.00017" y="574" width="348" height="624" />
+                <Position x="74.00035" y="602" width="348" height="624" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1415,40 +1056,12 @@ Cognition (multi-select; choose all that apply and add points together)
       <Destination ToolID="81" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="5" Connection="Output" />
-      <Destination ToolID="18" Connection="Left Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="13" Connection="Output" />
-      <Destination ToolID="18" Connection="Right Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="7" Connection="Output" />
       <Destination ToolID="86" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="8" Connection="Output" />
-      <Destination ToolID="5" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="86" Connection="Output" />
       <Destination ToolID="3" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="13" Connection="Output" />
-      <Destination ToolID="14" Connection="Right Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="13" Connection="Report" />
-      <Destination ToolID="36" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="14" Connection="Output" />
-      <Destination ToolID="16" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="18" Connection="Output" />
-      <Destination ToolID="19" Connection="Input" />
     </Connection>
     <Connection name="#5">
       <Origin ToolID="67" Connection="Output" />
@@ -1533,7 +1146,7 @@ Cognition (multi-select; choose all that apply and add points together)
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Predicting Patient Falls</Name>
+      <Name>Predicting Patient Falls Train and Select</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

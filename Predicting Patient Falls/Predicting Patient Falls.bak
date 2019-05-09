@@ -14,22 +14,9 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="112">
-      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-        <Position x="486" y="66" width="59" height="59" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="450" y="126" width="1173" height="277.0009" />
+        <Position x="443" y="54.00001" width="1173" height="341.0007" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -47,7 +34,7 @@
       <ChildNodes>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="616.001" y="334.0009" />
+            <Position x="609.001" y="326.0007" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -86,7 +73,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="493.0003" y="334.0002" />
+            <Position x="486.0004" y="326.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -125,7 +112,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="568.001" y="256.9999" width="168" height="72" />
+            <Position x="561.001" y="248.9997" width="168" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -145,7 +132,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="460" y="254.9998" width="132" height="72" />
+            <Position x="453" y="246.9996" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -165,7 +152,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="486.0002" y="160" />
+            <Position x="479.0002" y="157.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -192,7 +179,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings>
-            <Position x="822.0002" y="315.9995" />
+            <Position x="815.0002" y="313.9995" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -212,10 +199,7 @@ Table=Patients</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <Dependencies>
-              <Implicit>
-                <Dependency Path="_externals\2\Score.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
-                <Dependency Path="_externals\2\Score_Model.yxdb" Package="True" IsMacro="False" IsOutput="False" IsAlias="False" />
-              </Implicit>
+              <Implicit />
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
@@ -238,7 +222,7 @@ Table=Patients</DefaultAnnotationText>
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1014" y="316" />
+            <Position x="1007" y="313.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -267,7 +251,7 @@ ELSEIF
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="775.0002" y="233" width="144" height="72" />
+            <Position x="768.0002" y="231" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -287,7 +271,7 @@ ELSEIF
         </Node>
         <Node ToolID="93">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1086" y="316" />
+            <Position x="1079" y="313.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -319,7 +303,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="96">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-            <Position x="1170" y="316" />
+            <Position x="1163" y="313.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -364,7 +348,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="99">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="918.0002" y="316" />
+            <Position x="911.0002" y="313.9997" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -402,7 +386,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="102">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
-            <Position x="1266" y="316" />
+            <Position x="1259" y="313.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -441,7 +425,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="104">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-            <Position x="1554" y="316" />
+            <Position x="1547" y="313.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -482,7 +466,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="105">
           <GuiSettings>
-            <Position x="1362" y="316" />
+            <Position x="1355" y="313.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -492,7 +476,7 @@ Probability - Descending</DefaultAnnotationText>
               <Value name="IncludeImage">True</Value>
               <Value name="AlteryxLogo">False</Value>
               <Value name="OwnLogo">True</Value>
-              <Value name="ImageFile">C:\Repo\Oddities\Predicting Patient Falls\Continuus_Icon_rgb.png</Value>
+              <Value name="ImageFile">C:\Repo\Oddities\Predicting Patient Falls\SupportingFiles\Continuus_Icon_rgb.png</Value>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -514,7 +498,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-            <Position x="1554" y="232" />
+            <Position x="1547" y="229.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -526,7 +510,7 @@ Probability - Descending</DefaultAnnotationText>
               <ShowHeader value="False" />
               <ShowFooter value="False" />
               <PortraitMode value="True" />
-              <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+              <PaperType Width="612" Height="792" Left="0" Right="0" Top="0" Bottom="0" />
               <DefaultStyles>
                 <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
               </DefaultStyles>
@@ -546,7 +530,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="107">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1458" y="244" />
+            <Position x="1451" y="241.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -590,6 +574,39 @@ Probability - Descending</DefaultAnnotationText>
             </MetaInfo>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="113">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="455" y="88.00001" width="132" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Patient Fall Model</Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="1439" y="126" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
         </Node>
       </ChildNodes>
     </Node>
@@ -769,14 +786,6 @@ Cognition (multi-select; choose all that apply and add points together)
     </Node>
   </Nodes>
   <Connections>
-    <Connection name="#1">
-      <Origin ToolID="112" Connection="Question" />
-      <Destination ToolID="107" Connection="Question" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="105" Connection="Output13" />
-      <Destination ToolID="107" Connection="Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="5" Connection="Output" />
       <Destination ToolID="18" Connection="Left Input" />
@@ -812,6 +821,14 @@ Cognition (multi-select; choose all that apply and add points together)
     <Connection>
       <Origin ToolID="102" Connection="Output" />
       <Destination ToolID="105" Connection="Report Layout" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output13" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="112" Connection="Question" />
+      <Destination ToolID="107" Connection="Question" />
     </Connection>
     <Connection>
       <Origin ToolID="105" Connection="Output13" />
