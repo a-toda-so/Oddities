@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
@@ -25,9 +25,6 @@
           <DefaultAnnotationText>DataBig.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="satisfactionLevel" size="254" source="File: C:\Repo\Oddities\Employee Attrition Model\DataBig.csv" type="V_String" />
@@ -488,7 +485,7 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_267ab599e3eb4fb28638057451ae4f48_.yxdb</TempFile>
+                  <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_9744_0f7ef6a7436d48aab01f8434dc7aac67_\Engine_4160_f02bda5150f745a2839aef1d041b2ea9_.yxdb</TempFile>
                   <TempFileDataProfiling />
                   <Layout>
                     <ViewMode>Single</ViewMode>
@@ -886,7 +883,7 @@
                   <OrderChanged value="True" />
                   <CommaDecimal value="False" />
                   <SelectFields>
-                    <SelectField field="Left_EmployeeId" selected="True" input="Left_" />
+                    <SelectField field="Left_EmployeeId" selected="False" input="Left_" />
                     <SelectField field="Left_salary" selected="True" input="Left_" />
                     <SelectField field="Left_satisfactionLevel" selected="True" input="Left_" />
                     <SelectField field="Left_lastEvaluation" selected="True" input="Left_" />
@@ -1021,7 +1018,7 @@ ELSEI...</DefaultAnnotationText>
     </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="872" y="54" width="233" height="213" />
+        <Position x="872.0001" y="54" width="232.9999" height="213" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1064,7 +1061,7 @@ ELSEI...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_dea6442f6a56495a86945b979d00924a_.yxdb</TempFile>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_9744_0f7ef6a7436d48aab01f8434dc7aac67_\Engine_4160_f2d96def929c424f9343147fb6a0c2cb_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1114,7 +1111,7 @@ ELSEI...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_abefa0c4e40a4ec69b08da49eb4040b6_.yxdb</TempFile>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_9744_0f7ef6a7436d48aab01f8434dc7aac67_\Engine_4160_5c39995ee5fd484f80f9a47a84531718_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1142,7 +1139,7 @@ ELSEI...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_13608_2c968f47ce3443528f4ea367b3f091d9_\Engine_10364_3152e63caa834445a483dfd0d764eb00_.yxdb</TempFile>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_9744_0f7ef6a7436d48aab01f8434dc7aac67_\Engine_4160_e011453a3bd247d69c5a3493f4245c9d_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1166,7 +1163,7 @@ ELSEI...</DefaultAnnotationText>
         </Node>
         <Node ToolID="58">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="882" y="174" />
+            <Position x="882.0001" y="174" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1342,7 +1339,7 @@ ELSEI...</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>EmployeeChurnBigData</Name>
+      <Name>EmployeeChurnBigData AssistedModeling</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

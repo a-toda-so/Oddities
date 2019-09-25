@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="443" y="53.99998" width="1217" height="375.0015" />
+        <Position x="443" y="54" width="1217" height="375.0015" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -78,7 +78,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`</File>
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">.\Data\Patient Fall New Data.xlsx|||`Patients$`</File>
               <FormatSpecificOptions>
                 <FirstRowData>False</FirstRowData>
                 <ImportLine>1</ImportLine>
@@ -90,9 +90,6 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
 Table=`Patients$`</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall New Data.xlsx|||`Patients$`" type="Double" />
@@ -157,7 +154,7 @@ Table=`Patients$`</DefaultAnnotationText>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Repo\Oddities\Employee Attrition Model\BoostedModel.yxdb</File>
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\Employee Attrition Model\BoostedModel.yxdb</File>
               <FormatSpecificOptions />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -165,9 +162,6 @@ Table=`Patients$`</DefaultAnnotationText>
               <DefaultAnnotationText>BoostedModel.yxdb</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -198,25 +192,6 @@ Table=`Patients$`</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="Patient_ID" source="R-DATA:" type="Double" />
-                <Field name="Facility" size="1073741823" source="R-DATA:" type="V_WString" />
-                <Field name="Hospital_ID" source="R-DATA:" type="Double" />
-                <Field name="Age" source="R-DATA:" type="Double" />
-                <Field name="Fall.History" source="R-DATA:" type="Double" />
-                <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
-                <Field name="Medications" source="R-DATA:" type="Double" />
-                <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
-                <Field name="Mobility" source="R-DATA:" type="Double" />
-                <Field name="Cognition" source="R-DATA:" type="Double" />
-                <Field name="Score_0" source="R-DATA:" type="Double" />
-                <Field name="Score_1" source="R-DATA:" type="Double" />
-              </RecordInfo>
-            </MetaInfo>
           </Properties>
           <EngineSettings Macro="Predictive Tools\Score.yxmc" />
         </Node>
@@ -430,7 +405,7 @@ Probability - Descending</DefaultAnnotationText>
           <Properties>
             <Configuration>
               <TempFileType />
-              <OutputFile>C:\Repo\Oddities\Predicting Patient Falls\Output\PatienFallProbability.pdf</OutputFile>
+              <OutputFile>.\Output\PatienFallProbability.pdf</OutputFile>
               <BatchMode value="True" />
               <GroupField>Facility</GroupField>
               <FilenameModifier>Append</FilenameModifier>
@@ -458,9 +433,6 @@ Probability - Descending</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
         </Node>
@@ -476,23 +448,13 @@ Probability - Descending</DefaultAnnotationText>
               <Value name="IncludeImage">True</Value>
               <Value name="AlteryxLogo">False</Value>
               <Value name="OwnLogo">True</Value>
-              <Value name="ImageFile">C:\Repo\Oddities\Predicting Patient Falls\SupportingFiles\Continuus_Icon_rgb.png</Value>
+              <Value name="ImageFile">.\SupportingFiles\Continuus_Icon_rgb.png</Value>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
-            <MetaInfo connection="Output13">
-              <RecordInfo>
-                <Field name="Facility" size="1073741823" source="R-DATA:" type="V_WString" />
-                <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
-                <Field name="Header" size="2147483647" source="Report:Layout:" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
           </Properties>
           <EngineSettings Macro="HeaderMacro.yxmc" />
         </Node>
@@ -673,7 +635,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1398" y="87.99998" width="144" height="72" />
+            <Position x="1398" y="88" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -695,7 +657,7 @@ Probability - Descending</DefaultAnnotationText>
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="54" width="382" height="548" />
+        <Position x="54" y="54.00002" width="382" height="548" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -772,7 +734,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64" y="88" width="362" height="36" />
+            <Position x="64" y="88.00002" width="362" height="36" />
           </GuiSettings>
           <Properties>
             <Configuration>

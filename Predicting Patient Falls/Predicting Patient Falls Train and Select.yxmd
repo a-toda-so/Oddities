@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="447.0005" y="54.00013" width="953.9995" height="886.9999" />
+        <Position x="447.0004" y="54.00008" width="953.9996" height="886.9999" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -46,7 +46,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="7">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="490.0004" y="263.9995" />
+            <Position x="490.0004" y="263.9994" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -81,7 +81,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="457.0005" y="186.0004" width="132" height="72" />
+            <Position x="457.0004" y="186.0005" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -142,7 +142,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="792.0002" y="88.00013" width="598.9998" height="842.9999" />
+            <Position x="792.0002" y="88.00008" width="598.9998" height="842.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -357,7 +357,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                       <Value name="lambda_min">False</Value>
                       <Value name="Model Name">LR</Value>
                       <Value name="Y Var">Fall</Value>
-                      <Value name="X Vars">Age,Fall History,Elimination, Bowel and Urine,Medications,Patient Care Equipment,Mobility,Cognition,Fall</Value>
+                      <Value name="X Vars">Age,Fall History,Medications,Patient Care Equipment,Mobility,Cognition,Fall</Value>
                       <Value name="Use Weights">False</Value>
                       <Value name="Weight Vec" />
                       <Value name="regularization">False</Value>
@@ -496,6 +496,33 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
+                    <MetaInfo connection="predictions">
+                      <RecordInfo>
+                        <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="LR" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="BM" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="NN" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="DT" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="RF" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="SVM" size="1073741823" source="R-DATA:" type="V_WString" />
+                      </RecordInfo>
+                    </MetaInfo>
+                    <MetaInfo connection="error_measures">
+                      <RecordInfo>
+                        <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="Accuracy" source="R-DATA:" type="Double" />
+                        <Field name="Accuracy_0" source="R-DATA:" type="Double" />
+                        <Field name="Accuracy_1" source="R-DATA:" type="Double" />
+                        <Field name="F1" source="R-DATA:" type="Double" />
+                        <Field name="AUC" source="R-DATA:" type="Double" />
+                      </RecordInfo>
+                    </MetaInfo>
+                    <MetaInfo connection="Report">
+                      <RecordInfo>
+                        <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+                        <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+                      </RecordInfo>
+                    </MetaInfo>
                   </Properties>
                   <EngineSettings Macro="Model Comparison.yxmc" />
                 </Node>
@@ -505,7 +532,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_15848_626defab996a47b5baecaf9b1b45ac7d_\Engine_13156_9f5318be9d5d44cd82f70eed13fd305d_.yxdb</TempFile>
+                      <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_15424_d3024671df214db7b770bbd2f23730ca_\Engine_9072_3764e143510640559dcb97cd5a8e528b_.yxdb</TempFile>
                       <TempFileDataProfiling />
                       <Layout>
                         <ViewMode>Single</ViewMode>
@@ -555,7 +582,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                     <Configuration>
                       <Value name="model.name">BM</Value>
                       <Value name="select.target">Fall</Value>
-                      <Value name="select.predictors">Patient_ID=False,Age=False,Fall History=False,Elimination, Bowel and Urine=False,Medications=False,Patient Care Equipment=False,Mobility=False,Cognition=False,Fall=False</Value>
+                      <Value name="select.predictors">Patient_ID=False,Age=True,Fall History=True,Elimination, Bowel and Urine=True,Medications=True,Patient Care Equipment=True,Mobility=True,Cognition=True,Fall=False</Value>
                       <Value name="use.weights">False</Value>
                       <Value name="select.weights">Patient_ID</Value>
                       <Value name="marginal.plots">False</Value>
@@ -597,6 +624,9 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
+                    <Dependencies>
+                      <Implicit />
+                    </Dependencies>
                   </Properties>
                   <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
                 </Node>
@@ -642,7 +672,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="84">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.001" y="818" width="107.2778" height="103" />
+                <Position x="992.0011" y="818" width="107.2778" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -762,7 +792,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <File FileFormat="19" MaxRecords="">..\Employee Attrition Model\BoostedModel.yxdb</File>
+                  <File FileFormat="19" MaxRecords="">C:\Repo\Oddities\Predicting Patient Falls\Model.yxdb</File>
                   <Passwords />
                   <FormatSpecificOptions>
                     <NoSpatialIndex>False</NoSpatialIndex>
@@ -772,9 +802,12 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                 </Configuration>
                 <Annotation DisplayMode="0">
                   <Name />
-                  <DefaultAnnotationText>BoostedModel.yxdb</DefaultAnnotationText>
+                  <DefaultAnnotationText>Model.yxdb</DefaultAnnotationText>
                   <Left value="False" />
                 </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
               </Properties>
               <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
             </Node>

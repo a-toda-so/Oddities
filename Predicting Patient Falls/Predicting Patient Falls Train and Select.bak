@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="447.0005" y="54.00011" width="953.9996" height="886.9999" />
+        <Position x="447.0004" y="54.00008" width="953.9996" height="886.9999" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -46,12 +46,12 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="7">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="490.0004" y="263.9995" />
+            <Position x="490.0004" y="263.9994" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`</File>
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">.\Data\Patient Fall.xlsx|||`Patient Information Sample$`</File>
               <FormatSpecificOptions>
                 <FirstRowData>False</FirstRowData>
                 <ImportLine>1</ImportLine>
@@ -63,9 +63,6 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
 Table=`Patient Information Sample$`</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="Patient_ID" source="File: C:\Repo\Oddities\Predicting Patient Falls\Data\Patient Fall.xlsx|||`Patient Information Sample$`" type="Double" />
@@ -84,7 +81,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="457.0005" y="186.0004" width="132" height="72" />
+            <Position x="457.0004" y="186.0005" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -145,7 +142,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="792.0002" y="88.00011" width="598.9999" height="842.9999" />
+            <Position x="792.0002" y="88.00008" width="598.9998" height="842.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -163,7 +160,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
           <ChildNodes>
             <Node ToolID="68">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.0001" y="698" width="95.46853" height="103" />
+                <Position x="992" y="698" width="95.46853" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -218,7 +215,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="70">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.0003" y="578" width="97.22276" height="103" />
+                <Position x="992" y="578" width="97.22276" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -332,7 +329,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="72">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.0004" y="230" width="109.9672" height="103" />
+                <Position x="992" y="230" width="109.9672" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -360,7 +357,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                       <Value name="lambda_min">False</Value>
                       <Value name="Model Name">LR</Value>
                       <Value name="Y Var">Fall</Value>
-                      <Value name="X Vars">Age,Fall History,Elimination, Bowel and Urine,Medications,Patient Care Equipment,Mobility,Cognition,Fall</Value>
+                      <Value name="X Vars">Age,Fall History,Medications,Patient Care Equipment,Mobility,Cognition,Fall</Value>
                       <Value name="Use Weights">False</Value>
                       <Value name="Weight Vec" />
                       <Value name="regularization">False</Value>
@@ -395,7 +392,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="74">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.0003" y="458" width="127.8416" height="103" />
+                <Position x="992" y="458" width="127.8416" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -444,9 +441,6 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
-                    <Dependencies>
-                      <Implicit />
-                    </Dependencies>
                   </Properties>
                   <EngineSettings Macro="Predictive Tools\Neural_Network.yxmc" />
                 </Node>
@@ -504,29 +498,17 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                     </Annotation>
                     <MetaInfo connection="predictions">
                       <RecordInfo>
-                        <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="LR" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="BM" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="NN" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="DT" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="RF" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="SVM" size="1073741823" source="R-DATA:" type="V_WString" />
+                        <Field name="Actual" source="R-Data:" type="Double" />
                       </RecordInfo>
                     </MetaInfo>
                     <MetaInfo connection="error_measures">
                       <RecordInfo>
-                        <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="Accuracy" source="R-DATA:" type="Double" />
-                        <Field name="Accuracy_0" source="R-DATA:" type="Double" />
-                        <Field name="Accuracy_1" source="R-DATA:" type="Double" />
-                        <Field name="F1" source="R-DATA:" type="Double" />
-                        <Field name="AUC" source="R-DATA:" type="Double" />
-                      </RecordInfo>
-                    </MetaInfo>
-                    <MetaInfo connection="Report">
-                      <RecordInfo>
-                        <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
-                        <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+                        <Field name="Model" size="254" source="R-Data:" type="V_String" />
+                        <Field name="Correlation" source="R-Data:" type="Double" />
+                        <Field name="RMSE" source="R-Data:" type="Double" />
+                        <Field name="MAE" source="R-Data:" type="Double" />
+                        <Field name="MPE" source="R-Data:" type="Double" />
+                        <Field name="MAPE" source="R-Data:" type="Double" />
                       </RecordInfo>
                     </MetaInfo>
                   </Properties>
@@ -538,7 +520,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_15848_626defab996a47b5baecaf9b1b45ac7d_\Engine_13156_9f5318be9d5d44cd82f70eed13fd305d_.yxdb</TempFile>
+                      <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_10200_2c1a89e479a441d2917bd5a609835709_\Engine_9072_46e932b5650341aa9ccf4c0e86189402_.yxdb</TempFile>
                       <TempFileDataProfiling />
                       <Layout>
                         <ViewMode>Single</ViewMode>
@@ -564,7 +546,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="80">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.0003" y="350.0001" width="161.9246" height="103" />
+                <Position x="992" y="350.0001" width="161.9246" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -588,7 +570,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                     <Configuration>
                       <Value name="model.name">BM</Value>
                       <Value name="select.target">Fall</Value>
-                      <Value name="select.predictors">Patient_ID=False,Age=False,Fall History=False,Elimination, Bowel and Urine=False,Medications=False,Patient Care Equipment=False,Mobility=False,Cognition=False,Fall=False</Value>
+                      <Value name="select.predictors">Patient_ID=False,Age=True,Fall History=True,Elimination, Bowel and Urine=True,Medications=True,Patient Care Equipment=True,Mobility=True,Cognition=True,Fall=False</Value>
                       <Value name="use.weights">False</Value>
                       <Value name="select.weights">Patient_ID</Value>
                       <Value name="marginal.plots">False</Value>
@@ -678,7 +660,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
             </Node>
             <Node ToolID="84">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="992.001" y="818" width="107.2778" height="103" />
+                <Position x="992.0011" y="818" width="107.2778" height="103" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -767,9 +749,6 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
                       <DefaultAnnotationText />
                       <Left value="False" />
                     </Annotation>
-                    <Dependencies>
-                      <Implicit />
-                    </Dependencies>
                   </Properties>
                   <EngineSettings Macro="Predictive Tools\SVM_v2.yxmc" />
                 </Node>
@@ -801,7 +780,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <File FileFormat="19" MaxRecords="">C:\Repo\Oddities\Employee Attrition Model\BoostedModel.yxdb</File>
+                  <File FileFormat="19" MaxRecords="">..\Employee Attrition Model\BoostedModel.yxdb</File>
                   <Passwords />
                   <FormatSpecificOptions>
                     <NoSpatialIndex>False</NoSpatialIndex>
@@ -883,7 +862,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="53.99998" y="53.99997" width="388.0004" height="1192" />
+        <Position x="54" y="54" width="388.0004" height="1192" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -901,7 +880,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="44">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="76.00007" y="448.0001" width="348" height="104" />
+            <Position x="76.00009" y="448.0001" width="348" height="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -922,7 +901,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64.00002" y="136.0002" width="362" height="306" />
+            <Position x="64.00005" y="136.0002" width="362" height="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -960,7 +939,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="63.99998" y="87.99997" width="362" height="36" />
+            <Position x="64" y="88" width="362" height="36" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -980,7 +959,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64.00034" y="568" width="368" height="668" />
+            <Position x="64.00037" y="568" width="368" height="668" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -998,7 +977,7 @@ DATE | DESCRIPTION | AUTHOR
           <ChildNodes>
             <Node ToolID="66">
               <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="74.00034" y="602" width="348" height="624" />
+                <Position x="74.00037" y="602" width="348" height="624" />
               </GuiSettings>
               <Properties>
                 <Configuration>
