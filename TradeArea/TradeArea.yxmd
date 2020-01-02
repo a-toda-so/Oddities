@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="PortfolioPluginsGui.Geocoder.Geocoder">
+        <Position x="207" y="171" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputFields>
+            <Address>StreetAddress</Address>
+            <City>City</City>
+            <State>State</State>
+            <PostCode>Zip</PostCode>
+            <SelectedGeocoder>PortfolioExplorer_Latest:TeleAtlas_US</SelectedGeocoder>
+          </InputFields>
+          <OutputFields>
+            <OutputField field="SpatialObj" IsAttribute="false" fieldType="SpatialObj" fieldSize="" xmlPath="ReturnInfo\Candidate\CommonFields" />
+            <OutputField field="Lat" IsAttribute="false" fieldType="Double" fieldSize="11" xmlPath="ReturnInfo\Candidate\CommonFields" />
+            <OutputField field="Lon" IsAttribute="false" fieldType="Double" fieldSize="12" xmlPath="ReturnInfo\Candidate\CommonFields" />
+          </OutputFields>
+          <MultipleMatchMode value="2" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxGeocoder" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings>
+        <Position x="117" y="171" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Drop Down (31)">Wisconsin Golf Courses</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>GolfCourses (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="GolfCourses.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialMatch.SpatialMatch">
+        <Position x="585" y="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="CourseSpatialObj" />
+          <Universe SpatialObj="SpatialObject_TradeArea" />
+          <Method method="T********|****T****|***T*****|*T*******" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CourseSpatialObj Where Target Touches or Intersects Universe SpatialObject_TradeArea</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialMatch" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="891" y="441" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_2340_ba0aae7e7f15412bb213fcc1c8fe650e_\Engine_14832_1f9a9b6d05bc4b8fafc828670c482056_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Latest:CloudMade</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="297" y="171" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StreetAddress" selected="True" rename="CourseStreetAddress" />
+            <SelectField field="City" selected="True" rename="CourseCity" />
+            <SelectField field="State" selected="True" rename="CourseState" />
+            <SelectField field="Zip" selected="True" rename="CourseZip" />
+            <SelectField field="Zip4" selected="False" rename="CourseZip4" />
+            <SelectField field="Phone" selected="True" rename="CoursePhone" />
+            <SelectField field="SpatialObj" selected="True" rename="CourseSpatialObj" />
+            <SelectField field="Lat" selected="True" rename="CourseLat" />
+            <SelectField field="Lon" selected="True" rename="CourseLon" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="801" y="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="693" y="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DealerSpatialObj" selected="True" />
+            <SelectField field="SpatialObject_TradeArea" selected="True" />
+            <SelectField field="RadiusSize_TradeArea" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="891" y="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CourseName" selected="True" />
+            <SelectField field="CourseStreetAddress" selected="True" rename="StreetAddress" />
+            <SelectField field="CourseCity" selected="True" rename="City" />
+            <SelectField field="CourseState" selected="True" rename="State" />
+            <SelectField field="CourseZip" selected="True" rename="Zip" />
+            <SelectField field="CoursePhone" selected="True" rename="Phone" />
+            <SelectField field="CourseSpatialObj" selected="True" />
+            <SelectField field="CourseLat" selected="False" rename="Lat" />
+            <SelectField field="CourseLon" selected="False" rename="Lon" />
+            <SelectField field="DealerSpatialObj" selected="True" />
+            <SelectField field="SpatialObject_TradeArea" selected="True" />
+            <SelectField field="RadiusSize_TradeArea" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1719" y="423" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_2340_ba0aae7e7f15412bb213fcc1c8fe650e_\Engine_14832_6c50e0b40d884d81957ad3df1cebe88e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="953" y="173" width="835" height="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Build Report</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.ReportMap.ReportMap">
+            <Position x="963" y="207" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TemporaryFileLocationXML>C:\Users\jheisler\AppData\Local\Temp\Engine_2340_ba0aae7e7f15412bb213fcc1c8fe650e_\Engine_14832_cc9fdac7ec414167adbda70c97833349_.xml</TemporaryFileLocationXML>
+              <IsMetric value="False" />
+              <ImageWidth>6</ImageWidth>
+              <ImageHeight>4</ImageHeight>
+              <ImageResolution>1</ImageResolution>
+              <ReferenceMap>Latest:Tele_Atlas_US</ReferenceMap>
+              <BackgroundColor>#fdfeff</BackgroundColor>
+              <DropShadow>False</DropShadow>
+              <ScaleUnits>Miles</ScaleUnits>
+              <ExpandExtent>10</ExpandExtent>
+              <MinimumWidth>0.5</MinimumWidth>
+              <DataConnections>
+                <DataConnection name="#1">
+                  <ConnectionType>IncomingConnection</ConnectionType>
+                  <Connection>#1</Connection>
+                  <FileName />
+                  <SpatialObj />
+                  <GroupField />
+                  <ThemeField />
+                  <LabelField />
+                </DataConnection>
+              </DataConnections>
+              <Layers>
+                <Layer name="Base Layers - Points" order="0">
+                  <DisplayName>Base Layers - Points</DisplayName>
+                  <DataConnection />
+                  <LayerType>Placeholder</LayerType>
+                  <ShowLabel value="False" />
+                </Layer>
+                <Layer name="Base Layers - Lines" order="1">
+                  <DisplayName>Base Layers - Lines</DisplayName>
+                  <DataConnection />
+                  <LayerType>Placeholder</LayerType>
+                  <ShowLabel value="False" />
+                </Layer>
+                <Layer name="Base Layers - Polygons" order="2">
+                  <DisplayName>Base Layers - Polygons</DisplayName>
+                  <DataConnection />
+                  <LayerType>Placeholder</LayerType>
+                  <ShowLabel value="False" />
+                </Layer>
+              </Layers>
+              <Legend>
+                <LegendStyle Position="Right" UseCommaSeparators="false" />
+              </Legend>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxReportMap" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="963" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([CourseName])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>CourseName</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-11-26 06:10:01</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-11-26 06:10:01</StartDate>
+                  <EndDate>2019-11-26 06:10:01</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([CourseName])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1035" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="CourseSpatialObj" selected="False" />
+                <SelectField field="DealerSpatialObj" selected="False" />
+                <SelectField field="SpatialObject_TradeArea" selected="False" />
+                <SelectField field="RadiusSize_TradeArea" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+            <Position x="1107" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TableMode>Basic</TableMode>
+              <GroupingFields orderChanged="False" />
+              <Width>100%</Width>
+              <ShowHeader value="True" />
+              <ShowBarGraph value="False" />
+              <TableFields orderChanged="False">
+                <Field name="CourseName" selected="True" Alignment="Left" />
+                <Field name="StreetAddress" selected="True" Alignment="Left" />
+                <Field name="City" selected="True" Alignment="Left" />
+                <Field name="State" selected="True" Alignment="Left" />
+                <Field name="Zip" selected="True" Alignment="Left" />
+                <Field name="Phone" selected="True" Alignment="Left" />
+                <Field name="*Unknown" selected="True" Alignment="Right" />
+              </TableFields>
+              <TableStyles>
+                <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+                <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+                <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+                <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+              </TableStyles>
+              <StyleRules />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1341" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+            <Position x="1719" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFileType>pdf</TempFileType>
+              <BatchMode value="False" />
+              <DataField>Layout</DataField>
+              <Separator>Continuous</Separator>
+              <EmbedDependencies value="False" />
+              <ShowHeader value="True" />
+              <HeaderField>Header</HeaderField>
+              <ShowFooter value="False" />
+              <OnFirstPage value="False" />
+              <HeaderFooterEdge Distance="0" />
+              <PortraitMode value="True" />
+              <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+              <DefaultStyles>
+                <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+              </DefaultStyles>
+              <PNGResolution>1</PNGResolution>
+              <PNGLargerAction>squeeze</PNGLargerAction>
+              <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+              <PNGTransparentBG value="False" />
+              <PNGBackColor value="#ffffff" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1431" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BoundingRect" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1179" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Table" selected="True" rename="Element" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1251" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;Table&quot;" field="Item" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Item = "Table"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1071" y="207" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Map" selected="True" rename="Element" />
+                <SelectField field="BoundingRect" selected="False" />
+                <SelectField field="Table" selected="False" rename="Element" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1143" y="207" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;Map&quot;" field="Item" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Item = "Map"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+            <Position x="1539" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupingMode>PerRun</GroupingMode>
+              <Orientation>V</Orientation>
+              <Separator>Continuous</Separator>
+              <Width>100%</Width>
+              <Height />
+              <BorderStyle Enabled="false" Color="#000000" Width="2" />
+              <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+              <Padding>0</Padding>
+              <LayoutFields orderChanged="False">
+                <Field name="Element" selected="True" Alignment="Center" Width="" />
+              </LayoutFields>
+              <MergeIntoTable value="False" />
+              <SectionNameForGroup />
+              <SectionNameForAllRecords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vertical Layout
+All Records Combined</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings>
+            <Position x="1629" y="279" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="HeaderText">Remote Services Report</Value>
+              <Value name="IncludeDate">True</Value>
+              <Value name="DateFormat">Month dd, yyyy</Value>
+              <Value name="IncludeImage">False</Value>
+              <Value name="AlteryxLogo">True</Value>
+              <Value name="OwnLogo">False</Value>
+              <Value name="ImageFile">C:\Users\jheisler\OneDrive - Continuus Technologies\Desktop\toro.png</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="HeaderMacro.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="369" y="117" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_2340_ba0aae7e7f15412bb213fcc1c8fe650e_\Engine_14832_5a273235606f4e7bacb5a3812544db5a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Latest:CloudMade</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="495" y="423" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_2340_ba0aae7e7f15412bb213fcc1c8fe650e_\Engine_14832_7ee04234eb9047b6b9ff5481fdc4803a_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="107" y="335" width="331" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Dealer Trade Areas</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="117" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="8" />
+              <Fields>
+                <Field name="Dealer" />
+                <Field name="FullAddress" />
+                <Field name="City" />
+                <Field name="State" />
+                <Field name="Zip" />
+                <Field name="StreetAddress" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Reinders</c>
+                  <c>W227 N6225 Sussex Road, Sussex, WI 53089 United States</c>
+                  <c>Sussex</c>
+                  <c>WI</c>
+                  <c>53089</c>
+                  <c>W227 N6225 Sussex Road</c>
+                </r>
+                <r>
+                  <c>Reinders</c>
+                  <c>111 Lexington Drive, Buffalo Grove, IL 60089 United States</c>
+                  <c>Buffalo Grove</c>
+                  <c>IL</c>
+                  <c>60089</c>
+                  <c>111 Lexington Drive</c>
+                </r>
+                <r>
+                  <c>Reinders</c>
+                  <c>4217 Nakoosa Trail, Madison, WI 53714 United States</c>
+                  <c>Madison</c>
+                  <c>WI</c>
+                  <c>53714</c>
+                  <c>4217 Nakoosa Trail</c>
+                </r>
+                <r>
+                  <c>Reinders</c>
+                  <c>911 Tower Rd, Mundelein, IL 60060 United States</c>
+                  <c>Mundelein</c>
+                  <c>IL</c>
+                  <c>60060</c>
+                  <c>911 Tower Rd</c>
+                </r>
+                <r>
+                  <c>Reinders</c>
+                  <c>800 Randolph Drive, Appleton, WI 54913 United States</c>
+                  <c>Appleton</c>
+                  <c>WI</c>
+                  <c>54913</c>
+                  <c>800 Randolph Drive</c>
+                </r>
+                <r>
+                  <c>MTI</c>
+                  <c>1103 Riverwood Drive, Burnsville, MN 55337 United States</c>
+                  <c>Burnsville</c>
+                  <c>MN</c>
+                  <c>55337</c>
+                  <c>1103 Riverwood Drive</c>
+                </r>
+                <r>
+                  <c>MTI</c>
+                  <c>4830 Azelia Ave. N. Ste. 100, Brooklyn Center, MN 55429 United States</c>
+                  <c>Brooklyn Center</c>
+                  <c>MN</c>
+                  <c>55429</c>
+                  <c>4830 Azelia Ave</c>
+                </r>
+                <r>
+                  <c>MTI</c>
+                  <c>11400 73rd Ave. N., Maple Grove, MN 55369 United States</c>
+                  <c>Maple Grove</c>
+                  <c>MN</c>
+                  <c>55369</c>
+                  <c>11400 73rd Ave. N.</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="PortfolioPluginsGui.Geocoder.Geocoder">
+            <Position x="207" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputFields>
+                <Address>StreetAddress</Address>
+                <City>City</City>
+                <State>State</State>
+                <PostCode>Zip</PostCode>
+                <SelectedGeocoder>PortfolioExplorer_Latest:TeleAtlas_US</SelectedGeocoder>
+              </InputFields>
+              <OutputFields>
+                <OutputField field="SpatialObj" IsAttribute="false" fieldType="SpatialObj" fieldSize="" xmlPath="ReturnInfo\Candidate\CommonFields" />
+                <OutputField field="Lat" IsAttribute="false" fieldType="Double" fieldSize="11" xmlPath="ReturnInfo\Candidate\CommonFields" />
+                <OutputField field="Lon" IsAttribute="false" fieldType="Double" fieldSize="12" xmlPath="ReturnInfo\Candidate\CommonFields" />
+                <OutputField field="CensusId" IsAttribute="false" fieldType="V_String" fieldSize="16" xmlPath="ReturnInfo\Candidate\USSpecific" />
+              </OutputFields>
+              <MultipleMatchMode value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxGeocoder" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.TradeArea.TradeArea">
+            <Position x="297" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SpatialObj field="SpatialObj" includeOut="True" />
+              <Units units="Miles" noOverlap="False" />
+              <Radius_FromField value="False" />
+              <Radii>50</Radii>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>50 Miles</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxTradeArea" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="369" y="369" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FullAddress" selected="False" />
+                <SelectField field="City" selected="True" rename="DealerCity" />
+                <SelectField field="State" selected="True" rename="DealerState" />
+                <SelectField field="Zip" selected="True" rename="DealerZip" />
+                <SelectField field="StreetAddress" selected="True" rename="DealerStreetAddress" />
+                <SelectField field="SpatialObj" selected="True" rename="DealerSpatialObj" />
+                <SelectField field="Lat" selected="True" rename="DealerLat" />
+                <SelectField field="Lon" selected="True" rename="DealerLon" />
+                <SelectField field="CensusId" selected="False" />
+                <SelectField field="RadiusSize" selected="True" rename="RadiusSize_TradeArea" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output78" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Unmatched" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Matched" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="10" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="10" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Report Layout" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output13" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TradeArea</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

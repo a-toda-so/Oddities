@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="443" y="54" width="1217" height="375.0015" />
+        <Position x="452" y="63.00003" width="1325" height="375.0017" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -34,7 +34,7 @@
       <ChildNodes>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="609.001" y="360.0015" />
+            <Position x="618.001" y="369.0017" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -73,7 +73,7 @@ ELSEIF [Age] &gt;=70 and [Age]&lt;=79 THEN 2...</DefaultAnnotationText>
         </Node>
         <Node ToolID="8">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="486.0004" y="360.0007" />
+            <Position x="495.0005" y="369.0008" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -109,7 +109,7 @@ Table=`Patients$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="561.001" y="282.9998" width="168" height="72" />
+            <Position x="570.001" y="291.9999" width="168" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -129,7 +129,7 @@ Table=`Patients$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="453" y="281.0002" width="132" height="72" />
+            <Position x="462" y="290.0002" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -149,7 +149,7 @@ Table=`Patients$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="479.0007" y="192.0003" />
+            <Position x="488.0007" y="201.0005" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -173,7 +173,7 @@ Table=`Patients$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings>
-            <Position x="815.0002" y="348.0001" />
+            <Position x="824.0002" y="357.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -192,12 +192,28 @@ Table=`Patients$`</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Patient_ID" source="R-DATA:" type="Double" />
+                <Field name="Facility" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Hospital_ID" source="R-DATA:" type="Double" />
+                <Field name="Age" source="R-DATA:" type="Double" />
+                <Field name="Fall.History" source="R-DATA:" type="Double" />
+                <Field name="Elimination..Bowel.and.Urine" source="R-DATA:" type="Double" />
+                <Field name="Medications" source="R-DATA:" type="Double" />
+                <Field name="Patient.Care.Equipment" source="R-DATA:" type="Double" />
+                <Field name="Mobility" source="R-DATA:" type="Double" />
+                <Field name="Cognition" source="R-DATA:" type="Double" />
+                <Field name="Score_0" source="R-DATA:" type="Double" />
+                <Field name="Score_1" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
           </Properties>
           <EngineSettings Macro="Predictive Tools\Score.yxmc" />
         </Node>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="995" y="347.9998" />
+            <Position x="1112" y="356.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -226,7 +242,7 @@ ELSEIF
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="768.0002" y="265.0005" width="144" height="72" />
+            <Position x="777.0002" y="274.0006" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -246,7 +262,7 @@ ELSEIF
         </Node>
         <Node ToolID="93">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1079" y="347.9998" />
+            <Position x="1196" y="356.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -278,7 +294,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="96">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-            <Position x="1163" y="347.9998" />
+            <Position x="1280" y="356.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -323,7 +339,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="99">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="911.0002" y="348.0002" />
+            <Position x="920.0002" y="357.0003" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -361,7 +377,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="102">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
-            <Position x="1259" y="347.9998" />
+            <Position x="1376" y="356.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -400,7 +416,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="104">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-            <Position x="1547" y="347.9998" />
+            <Position x="1664" y="356.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -438,7 +454,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="105">
           <GuiSettings>
-            <Position x="1355" y="347.9998" />
+            <Position x="1472" y="356.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -455,12 +471,19 @@ Probability - Descending</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
+            <MetaInfo connection="Output13">
+              <RecordInfo>
+                <Field name="Facility" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+                <Field name="Header" size="2147483647" source="Report:Layout:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
           </Properties>
           <EngineSettings Macro="HeaderMacro.yxmc" />
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-            <Position x="1547" y="263.9998" />
+            <Position x="1664" y="272.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -495,7 +518,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="107">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1451" y="275.9998" />
+            <Position x="1568" y="284.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -542,7 +565,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="454.9999" y="122.0005" width="132" height="72" />
+            <Position x="463.9999" y="131.0004" width="132" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -562,7 +585,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="112">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="1439" y="160" width="59" height="59" />
+            <Position x="1556" y="169" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -575,7 +598,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="954" y="280" width="144" height="72" />
+            <Position x="1071" y="289" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -595,7 +618,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="115">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1218" y="280" width="144" height="72" />
+            <Position x="1335" y="289" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -615,7 +638,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1506" y="184" width="144" height="72" />
+            <Position x="1623" y="193" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -635,7 +658,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1398" y="88" width="144" height="72" />
+            <Position x="1515" y="97.00003" width="144" height="72" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -653,11 +676,92 @@ Probability - Descending</DefaultAnnotationText>
             </Annotation>
           </Properties>
         </Node>
+        <Node ToolID="118">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1017" y="357" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Probability] &gt;= (ToNumber([#1])/100)</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-11-21 07:30:58</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-11-21 07:30:58</StartDate>
+                  <EndDate>2019-11-21 07:30:58</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Probability] &gt;= (ToNumber([#1])/100)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Patient_ID" size="19" source="R-DATA:" type="V_WString" />
+                <Field name="Facility" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Probability" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Patient_ID" size="19" source="R-DATA:" type="V_WString" />
+                <Field name="Facility" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Probability" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="1005" y="243" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="963" y="171" width="144" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Enable end user to select what the probability cutoff is</Text>
+              <Font name="Segoe UI" size="9.75" style="0" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="0" g="168" b="158" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="54.00002" width="382" height="548" />
+        <Position x="63" y="63" width="382" height="548" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -675,7 +779,7 @@ Probability - Descending</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="44">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="76.00007" y="448.0001" width="348" height="104" />
+            <Position x="85.00008" y="457.0001" width="348" height="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -696,7 +800,7 @@ Probability - Descending</DefaultAnnotationText>
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64.00001" y="136.0002" width="362" height="306" />
+            <Position x="75.00002" y="145.0002" width="360" height="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -734,7 +838,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64" y="88.00002" width="362" height="36" />
+            <Position x="73" y="97" width="362" height="36" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -754,7 +858,7 @@ DATE | DESCRIPTION | AUTHOR
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64.00033" y="568" width="221.1202" height="24" />
+            <Position x="73.0004" y="577" width="221.1202" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -772,7 +876,7 @@ DATE | DESCRIPTION | AUTHOR
           <ChildNodes>
             <Node ToolID="66">
               <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-                <Position x="74.00035" y="602" width="348" height="624" />
+                <Position x="83.00038" y="611" width="348" height="624" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -861,7 +965,11 @@ Cognition (multi-select; choose all that apply and add points together)
     </Connection>
     <Connection>
       <Origin ToolID="99" Connection="Output" />
-      <Destination ToolID="19" Connection="Input" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="119" Connection="Question" />
+      <Destination ToolID="118" Connection="Question" />
     </Connection>
     <Connection>
       <Origin ToolID="102" Connection="Output" />
@@ -882,6 +990,10 @@ Cognition (multi-select; choose all that apply and add points together)
     <Connection>
       <Origin ToolID="107" Connection="True" />
       <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -904,6 +1016,12 @@ Cognition (multi-select; choose all that apply and add points together)
       <Constant>
         <Namespace>Question</Namespace>
         <Name>Drop Down (112)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (119)</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -962,6 +1080,16 @@ Storms Hospital
 Willaha Hospital
 Willow Run Hospital
 ]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Probability of fall to report (%)</Description>
+              <Name>Text Box (119)</Name>
+              <ToolId value="119" />
+              <Default>90</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
             </Question>
           </Questions>
         </Question>

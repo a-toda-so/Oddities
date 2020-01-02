@@ -1,0 +1,776 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ResultsMen.xlsx
+Table=`Results$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RANK" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="NAME" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_WString" />
+            <Field name="POINTS" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="Double" />
+            <Field name="SPLIT TRIPLET" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="CLEAN" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="SWIM PADDLE" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="RINGER 1" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="RINGER 2" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="THE STANDARD" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\ResultsMen.xlsx|||`Results$`" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="246" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>RANK</UpdateField_Name>
+          <CreateField_Name>New Field</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(ISNULL([RANK]),[Row-1:RANK],[rank])</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(ISNULL([RANK]),[Row-1:RANK],[rank])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Resultswomen.xlsx
+Table=`Results$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RANK" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="Double" />
+            <Field name="NAME" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="POINTS" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="Double" />
+            <Field name="SPLIT TRIPLET" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="CLEAN" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="SWIM PADDLE" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="RINGER 1" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="RINGER 2" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="THE STANDARD" size="255" source="File: C:\Repo\Oddities\CossfitGames\Alteryx\InputData\Resultswomen.xlsx|||`Results$`" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="894" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Contains([NAME],'Bilal')" field="asad" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[asad = Contains([NAME],'Bilal')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([RANK],&quot;T&quot;,&quot;&quot;)" field="RANK" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[RANK = Replace([RANK],"T","")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="510" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RANK" selected="True" type="Int32" size="4" />
+            <SelectField field="TieBreaker" selected="True" />
+            <SelectField field="NAME" selected="True" />
+            <SelectField field="POINTS" selected="False" />
+            <SelectField field="SPLIT TRIPLET" selected="False" />
+            <SelectField field="CLEAN" selected="False" />
+            <SelectField field="SWIM PADDLE" selected="False" />
+            <SelectField field="RINGER 1" selected="False" />
+            <SelectField field="RINGER 2" selected="False" />
+            <SelectField field="THE STANDARD" selected="False" />
+            <SelectField field="FileName" selected="True" rename="Group" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="606" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Group" order="Ascending" />
+            <Field field="RANK" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Group - Ascending
+RANK - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="702" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([NAME])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>NAME</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-09-28 07:02:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-09-28 07:02:05</StartDate>
+              <EndDate>2019-09-28 07:02:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([NAME])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="798" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Group</UpdateField_Name>
+          <CreateField_Name>AthleteIndex</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF([TieBreaker]=[Row-1:TieBreaker],[Row-1:AthleteIndex]+1,1)</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF([TieBreaker]=[Row-1:TieBreaker],[Row-1:AthleteIndex]+1,1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="894" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="TieBreaker" />
+            <Field field="Group" />
+          </GroupFields>
+          <HeaderField field="AthleteIndex" />
+          <DataField field="NAME" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: IIF([Row-1:NAME]=&quot;View Profile&quot;,[Row-1:TieBreaker]+1,[Row-1:TieBreaker])" name="TieBreaker" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="Group" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="1" size="2048" source="CrossTab:Header:AthleteIndex:1:Concat:" type="V_WString" />
+            <Field name="2" size="2048" source="CrossTab:Header:AthleteIndex:2:Concat:" type="V_WString" />
+            <Field name="3" size="2048" source="CrossTab:Header:AthleteIndex:3:Concat:" type="V_WString" />
+            <Field name="4" size="2048" source="CrossTab:Header:AthleteIndex:4:Concat:" type="V_WString" />
+            <Field name="5" size="2048" source="CrossTab:Header:AthleteIndex:5:Concat:" type="V_WString" />
+            <Field name="6" size="2048" source="CrossTab:Header:AthleteIndex:6:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="TieBreaker" order="Asc" />
+            <Field field="Group" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="990" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>5</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>5</RootName>
+          <Delimeters value="|" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1086" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="1" selected="True" rename="First Name" />
+            <SelectField field="2" selected="True" rename="Last Name" />
+            <SelectField field="3" selected="True" rename="Country" />
+            <SelectField field="4" selected="True" rename="Age" />
+            <SelectField field="5" selected="False" />
+            <SelectField field="6" selected="False" />
+            <SelectField field="51" selected="True" rename="Height" />
+            <SelectField field="52" selected="True" rename="Weight" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="342" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RANK</UpdateField_Name>
+          <CreateField_Name>TieBreaker</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF([Row-1:NAME]="View Profile",[Row-1:TieBreaker]+1,[Row-1:TieBreaker])</Expression>
+          <GroupByFields>
+            <Field field="FileName" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF([Row-1:NAME]="View Profile",[Row-1:TieBreaker]+1,[Row-1:T...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1278" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="TRIM(REPLACE(Age,&quot;Age &quot;,&quot;&quot;))" field="Age" size="2048" type="V_WString" />
+            <FormulaField expression="TRIM(Replace([Weight], &quot; lbs&quot;,&quot;&quot;))" field="Weight" size="2048" type="V_WString" />
+            <FormulaField expression="(ToNumber([Height1])*12) + TONUMBER(Replace([Height2], '&quot;', '') )" field="Height Inches" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Age = TRIM(REPLACE(Age,"Age ",""))
+Weight = TRIM(Replace([Weight], " lbs",""))
+H...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1182" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Height</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Height</RootName>
+          <Delimeters value="'" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1374" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TieBreaker" selected="True" />
+            <SelectField field="Group" selected="True" />
+            <SelectField field="First Name" selected="True" />
+            <SelectField field="Last Name" selected="True" />
+            <SelectField field="Country" selected="True" />
+            <SelectField field="Age" selected="True" type="Int64" size="8" />
+            <SelectField field="Height" selected="False" type="Int64" size="8" />
+            <SelectField field="Height Inches" selected="True" />
+            <SelectField field="Weight" selected="True" type="Int64" size="8" />
+            <SelectField field="Height1" selected="False" />
+            <SelectField field="Height2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1470" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Group] = "ResultsMen"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Group</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-10-05 11:43:11</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>ResultsMen</Operand>
+              <StartDate>2019-10-05 11:43:11</StartDate>
+              <EndDate>2019-10-05 11:43:11</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Group] = "ResultsMen"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="930" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="TieBreaker" />
+            <Field field="Group" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="TieBreaker" />
+            <Field field="Group" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_TieBreaker" selected="True" input="Left_" />
+                <SelectField field="Left_Group" selected="True" input="Left_" />
+                <SelectField field="Left_First Name" selected="True" input="Left_" />
+                <SelectField field="Left_Last Name" selected="True" input="Left_" />
+                <SelectField field="Left_Country" selected="True" input="Left_" />
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Height Inches" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Right_RANK" selected="True" input="Right_" />
+                <SelectField field="Right_TieBreaker" selected="False" rename="Right_TieBreaker" input="Right_" />
+                <SelectField field="Right_SPLIT TRIPLET" selected="True" input="Right_" />
+                <SelectField field="Right_CLEAN" selected="True" input="Right_" />
+                <SelectField field="Right_SWIM PADDLE" selected="True" input="Right_" />
+                <SelectField field="Right_RINGER 1" selected="True" input="Right_" />
+                <SelectField field="Right_RINGER 2" selected="True" input="Right_" />
+                <SelectField field="Right_THE STANDARD" selected="True" input="Right_" />
+                <SelectField field="Right_POINTS" selected="True" input="Right_" />
+                <SelectField field="Right_Group" selected="False" rename="Right_Group" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="822" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RANK" selected="True" type="Int32" size="4" />
+            <SelectField field="TieBreaker" selected="True" />
+            <SelectField field="NAME" selected="False" />
+            <SelectField field="POINTS" selected="True" />
+            <SelectField field="SPLIT TRIPLET" selected="True" />
+            <SelectField field="CLEAN" selected="True" />
+            <SelectField field="SWIM PADDLE" selected="True" />
+            <SelectField field="RINGER 1" selected="True" />
+            <SelectField field="RINGER 2" selected="True" />
+            <SelectField field="THE STANDARD" selected="True" />
+            <SelectField field="FileName" selected="True" rename="Group" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="750" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([SPLIT TRIPLET])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>SPLIT TRIPLET</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-10-05 12:14:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-10-05 12:14:18</StartDate>
+              <EndDate>2019-10-05 12:14:18</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([SPLIT TRIPLET])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1014" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="TieBreaker" />
+            <Field field="Group" />
+            <Field field="First Name" />
+            <Field field="Last Name" />
+            <Field field="Country" />
+            <Field field="Age" />
+            <Field field="Height Inches" />
+            <Field field="Weight" />
+          </KeyFields>
+          <DataFields>
+            <Field field="TieBreaker" selected="False" />
+            <Field field="Group" selected="False" />
+            <Field field="First Name" selected="False" />
+            <Field field="Last Name" selected="False" />
+            <Field field="Country" selected="False" />
+            <Field field="Age" selected="False" />
+            <Field field="Height Inches" selected="False" />
+            <Field field="Weight" selected="False" />
+            <Field field="RANK" selected="True" />
+            <Field field="SPLIT TRIPLET" selected="True" />
+            <Field field="CLEAN" selected="True" />
+            <Field field="SWIM PADDLE" selected="True" />
+            <Field field="RINGER 1" selected="True" />
+            <Field field="RINGER 2" selected="True" />
+            <Field field="THE STANDARD" selected="True" />
+            <Field field="POINTS" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="34" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="34" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Join" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataTransformation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
