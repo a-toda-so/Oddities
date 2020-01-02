@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="456.0004" y="63.00008" width="953.9996" height="886.9999" />
+        <Position x="456.0004" y="63.00011" width="953.9996" height="886.9999" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -142,7 +142,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="801.0002" y="97.00008" width="598.9998" height="842.9999" />
+            <Position x="801.0002" y="97.00011" width="598.9998" height="842.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -918,9 +918,7 @@ Table=`Patient Information Sample$`</DefaultAnnotationText>
 All rights reserved.
 
 This software is the confidential and proprietary information
-of Continuus. ("Confidential Information").  You shall not disclose
-such Confidential Information and shall use it only in accordance
-with the terms of the license agreement you entered into with Artisan.
+of Continuus.
 
 SYNOPSIS
     Early prediction of patients that are at high risk of fall while at a hospital is important in reducing the preventable hospital acquired conditions.This workflow leverages the Johns Hopkins Fall Risk Assessment Tool and the data generated from it to build likelihood scores for falls. 
