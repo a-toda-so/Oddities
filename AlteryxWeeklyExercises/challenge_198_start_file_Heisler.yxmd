@@ -1,0 +1,3168 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="70" y="45" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #198</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="71.00002" y="63" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="844" y="351" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Product ID" />
+            <Field field="Product" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Product ID" selected="False" />
+            <Field field="Product" selected="False" />
+            <Field field="010" selected="True" />
+            <Field field="020" selected="True" />
+            <Field field="030" selected="True" />
+            <Field field="050" selected="True" />
+            <Field field="060" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="934" y="351" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Location ID" />
+            <SelectField field="Product ID" selected="True" />
+            <SelectField field="Product" selected="True" />
+            <SelectField field="Value" selected="True" rename="Quantity in Stock" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="934" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Location ID" action="GroupBy" rename="Location ID" />
+            <SummarizeField field="Location" action="GroupBy" rename="Location" />
+            <SummarizeField field="Product ID" action="GroupBy" rename="Product ID" />
+            <SummarizeField field="Units Sold" action="Sum" rename="Sum_Units Sold" />
+            <SummarizeField field="Units Sold" action="Avg" rename="Avg_Units Sold" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="754" y="351" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Location ID: 010" />
+            <Field name="Location ID: 020" />
+            <Field name="Location ID: 030" />
+            <Field name="Location ID: 050" />
+            <Field name="Location ID: 060" />
+            <Field name="Product ID" selected="False" />
+            <Field name="Product" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Expression>REPLACE([_CurrentField_],"Location ID: ","")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Product ID" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="Double" />
+            <Field name="Product" size="255" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="V_String" />
+            <Field name="010" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="Double" />
+            <Field name="020" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="Double" />
+            <Field name="030" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="Double" />
+            <Field name="050" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="Double" />
+            <Field name="060" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Inventory data.xlsx|||`Inventory data$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1024" y="424" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Location ID" />
+            <Field field="Product ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Location ID" />
+            <Field field="Product ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Location ID" selected="False" input="Right_" />
+                <SelectField field="Right_Product ID" selected="False" rename="Right_Product ID" input="Right_" />
+                <SelectField field="Right_Right_Location ID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1114" y="424" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1107" y="657" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Location ID" action="GroupBy" rename="Location ID" />
+            <SummarizeField field="Prod ID" action="GroupBy" rename="Prod ID" />
+            <SummarizeField field="On Order Qty" action="Sum" rename="On Order Qty" />
+            <SummarizeField field="ETA Date" action="Min" rename="ETA Date" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1241" y="532" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Location ID" />
+            <Field field="Product ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Location ID" />
+            <Field field="Prod ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Location ID" selected="False" rename="Right_Location ID" input="Right_" />
+                <SelectField field="Right_Prod ID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1324" y="532" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1396" y="532" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF(ISNULL([On Order Qty]),0, [On Order Qty])" field="On Order Qty" size="8" type="Double" />
+            <FormulaField expression="IIF(ISNULL([ETA Date]),&quot;No PO&quot;, [ETA Date])" field="ETA Date" size="10" type="String" />
+            <FormulaField expression="Trim([Location])" field="Location" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>On Order Qty = IIF(ISNULL([On Order Qty]),0, [On Order Qty])
+ETA Date = IIF(ISNU...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="844" y="657" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF(&#xA;	Length(tostring([ETA: Day]))&lt;2, &#xA;	&quot;0&quot;+ tostring([ETA: Day]), &#xA;	tostring([ETA: Day]))" field="Day Formatted" size="1073741823" type="V_WString" />
+            <FormulaField expression="[ETA: Month]+&quot;-&quot;+tostring([Day Formatted])+&quot;-&quot;+tostring([ETA: Year])" field="Date Combined" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Day Formatted = IIF(
+	Length(tostring([ETA: Day]))&lt;2, 
+	"0"+ tostring([ETA: Day]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="934" y="657" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Date Combined</InputFieldName>
+          <Format>Month-dd-yyyy</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Date Combined From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1024" y="657" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ETA: Month" selected="False" />
+            <SelectField field="ETA: Day" selected="False" />
+            <SelectField field="ETA: Year" selected="False" />
+            <SelectField field="Day Formatted" selected="False" />
+            <SelectField field="Date Combined" selected="False" />
+            <SelectField field="DateTime_Out" selected="True" rename="ETA Date" type="String" size="10" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1503" y="531" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_1832_c800161b38804f358a2cafc9f41a35a7_\Engine_18120_9ed98db4352b44c2ab7aa9ac595f047e_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1701" y="459" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Location ID" />
+            <Field field="Product ID" />
+            <Field field="Product" />
+            <Field field="Quantity in Stock" />
+            <Field field="Location" />
+            <Field field="Sum_Units Sold" />
+            <Field field="Avg_Units Sold" />
+            <Field field="ETA Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Location ID" />
+            <Field field="Product ID" />
+            <Field field="Product" />
+            <Field field="Quantity in Stock" />
+            <Field field="Location" />
+            <Field field="Sum_Units Sold" />
+            <Field field="Avg_Units Sold" />
+            <Field field="ETA Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Location ID" selected="True" rename="Right_Location ID" input="Right_" />
+                <SelectField field="Right_Product ID" selected="True" rename="Right_Product ID" input="Right_" />
+                <SelectField field="Right_Product" selected="True" rename="Right_Product" input="Right_" />
+                <SelectField field="Right_Quantity in Stock" selected="True" rename="Right_Quantity in Stock" input="Right_" />
+                <SelectField field="Right_Location" selected="True" rename="Right_Location" input="Right_" />
+                <SelectField field="Right_Sum_Units Sold" selected="True" rename="Right_Sum_Units Sold" input="Right_" />
+                <SelectField field="Right_Avg_Units Sold" selected="True" rename="Right_Avg_Units Sold" input="Right_" />
+                <SelectField field="Right_On Order Qty" selected="True" rename="Right_On Order Qty" input="Right_" />
+                <SelectField field="Right_ETA Date" selected="True" rename="Right_ETA Date" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="596" y="446" width="121.2286" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Invoice</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="621" y="495" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">.\Invoice Data.xlsx|||`Invoice Data$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Invoice Data.xlsx
+Query=`Invoice Data$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Location ID" size="255" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Invoice Data.xlsx|||`Invoice Data$`" type="V_String" />
+                <Field name="Location" size="255" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Invoice Data.xlsx|||`Invoice Data$`" type="V_String" />
+                <Field name="Date Sold" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Invoice Data.xlsx|||`Invoice Data$`" type="Date" />
+                <Field name="Product ID" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Invoice Data.xlsx|||`Invoice Data$`" type="Double" />
+                <Field name="Units Sold" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Invoice Data.xlsx|||`Invoice Data$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="596" y="608" width="113.4591" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Order</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="621" y="657" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">.\Products On Order Data.xlsx|||`Products On Order Data$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Products On Order Data.xlsx
+Query=`Products On Order Data$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Location ID" size="255" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Products On Order Data.xlsx|||`Products On Order Data$`" type="V_String" />
+                <Field name="Prod ID" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Products On Order Data.xlsx|||`Products On Order Data$`" type="Double" />
+                <Field name="ETA: Month" size="255" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Products On Order Data.xlsx|||`Products On Order Data$`" type="V_String" />
+                <Field name="ETA: Day" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Products On Order Data.xlsx|||`Products On Order Data$`" type="Double" />
+                <Field name="ETA: Year" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Products On Order Data.xlsx|||`Products On Order Data$`" type="Double" />
+                <Field name="On Order Qty" source="File: C:\Users\jheisler\Downloads\challenge_198_start_file\Products On Order Data.xlsx|||`Products On Order Data$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1298" y="302" width="253" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Solution</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1467" y="351" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_1832_c800161b38804f358a2cafc9f41a35a7_\Engine_18120_c803c17e51b041119e6113a631b8b571_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="1323" y="351" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="100" />
+              <Fields>
+                <Field name="Location ID" />
+                <Field name="Location" />
+                <Field name="Product ID" />
+                <Field name="Product" />
+                <Field name="Inventory Qty" />
+                <Field name="Units Sold" />
+                <Field name="Avg Sales" />
+                <Field name="On Order Qty" />
+                <Field name="ETA Date" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>6249</c>
+                  <c>5952</c>
+                  <c>258.782608695652</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>2052</c>
+                  <c>1888</c>
+                  <c>82.0869565217391</c>
+                  <c>980</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>5334</c>
+                  <c>11050</c>
+                  <c>480.434782608696</c>
+                  <c>7056</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>47795</c>
+                  <c>58899</c>
+                  <c>2560.82608695652</c>
+                  <c>3120</c>
+                  <c>June 29, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>8736</c>
+                  <c>6636</c>
+                  <c>288.521739130435</c>
+                  <c>1344</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>2460</c>
+                  <c>1707</c>
+                  <c>74.2173913043478</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>2278</c>
+                  <c>8233</c>
+                  <c>357.95652173913</c>
+                  <c>8640</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>416</c>
+                  <c>744</c>
+                  <c>32.3478260869565</c>
+                  <c>144</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>3455</c>
+                  <c>7103</c>
+                  <c>308.826086956522</c>
+                  <c>1440</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>1015</c>
+                  <c>23820</c>
+                  <c>1035.65217391304</c>
+                  <c>16954</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>7588</c>
+                  <c>12604</c>
+                  <c>548</c>
+                  <c>6160</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>75</c>
+                  <c>122</c>
+                  <c>5.54545454545455</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>2770</c>
+                  <c>2541</c>
+                  <c>110.478260869565</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>1171</c>
+                  <c>3063</c>
+                  <c>133.173913043478</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>14196</c>
+                  <c>24121</c>
+                  <c>1048.73913043478</c>
+                  <c>6240</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1775</c>
+                  <c>1893</c>
+                  <c>82.304347826087</c>
+                  <c>1120</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>10922</c>
+                  <c>10560</c>
+                  <c>459.130434782609</c>
+                  <c>3248</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>517</c>
+                  <c>1171</c>
+                  <c>50.9130434782609</c>
+                  <c>360</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>18546</c>
+                  <c>16921</c>
+                  <c>735.695652173913</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>MCALLEN</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>15927</c>
+                  <c>15377</c>
+                  <c>668.565217391304</c>
+                  <c>6160</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>5338</c>
+                  <c>4271</c>
+                  <c>177.958333333333</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>1091</c>
+                  <c>1164</c>
+                  <c>48.5</c>
+                  <c>588</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>2860</c>
+                  <c>5947</c>
+                  <c>247.791666666667</c>
+                  <c>4606</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>37388</c>
+                  <c>38448</c>
+                  <c>1537.92</c>
+                  <c>9000</c>
+                  <c>June 29, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>4870</c>
+                  <c>3447</c>
+                  <c>137.88</c>
+                  <c>112</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>1408</c>
+                  <c>669</c>
+                  <c>27.875</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>2059</c>
+                  <c>5459</c>
+                  <c>218.36</c>
+                  <c>2040</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>254</c>
+                  <c>492</c>
+                  <c>21.3913043478261</c>
+                  <c>144</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>3608</c>
+                  <c>4261</c>
+                  <c>177.541666666667</c>
+                  <c>1728</c>
+                  <c>July 9, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>2169</c>
+                  <c>10168</c>
+                  <c>391.076923076923</c>
+                  <c>8722</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>4236</c>
+                  <c>6172</c>
+                  <c>246.88</c>
+                  <c>4480</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>327</c>
+                  <c>495</c>
+                  <c>21.5217391304348</c>
+                  <c>32</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>606</c>
+                  <c>1486</c>
+                  <c>64.6086956521739</c>
+                  <c>936</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>940</c>
+                  <c>1713</c>
+                  <c>65.8846153846154</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>10397</c>
+                  <c>13450</c>
+                  <c>538</c>
+                  <c>3000</c>
+                  <c>June 29, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>971</c>
+                  <c>1056</c>
+                  <c>44</c>
+                  <c>560</c>
+                  <c>July 5, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>3263</c>
+                  <c>3586</c>
+                  <c>149.416666666667</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>284</c>
+                  <c>557</c>
+                  <c>24.2173913043478</c>
+                  <c>152</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>8980</c>
+                  <c>8425</c>
+                  <c>324.038461538462</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>HARLINGEN</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>6800</c>
+                  <c>6347</c>
+                  <c>253.88</c>
+                  <c>3024</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>2488</c>
+                  <c>2468</c>
+                  <c>107.304347826087</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>295</c>
+                  <c>618</c>
+                  <c>26.8695652173913</c>
+                  <c>588</c>
+                  <c>July 5, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>3378</c>
+                  <c>3947</c>
+                  <c>171.608695652174</c>
+                  <c>4998</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>30282</c>
+                  <c>27863</c>
+                  <c>1211.4347826087</c>
+                  <c>1680</c>
+                  <c>June 29, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>3111</c>
+                  <c>2322</c>
+                  <c>100.95652173913</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>1048</c>
+                  <c>632</c>
+                  <c>27.4782608695652</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>2059</c>
+                  <c>7130</c>
+                  <c>310</c>
+                  <c>4080</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>166</c>
+                  <c>298</c>
+                  <c>17.5294117647059</c>
+                  <c>88</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>3489</c>
+                  <c>3742</c>
+                  <c>162.695652173913</c>
+                  <c>936</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>4558</c>
+                  <c>15452</c>
+                  <c>671.826086956522</c>
+                  <c>12936</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>4242</c>
+                  <c>7826</c>
+                  <c>340.260869565217</c>
+                  <c>2632</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>21</c>
+                  <c>40</c>
+                  <c>2.66666666666667</c>
+                  <c>36</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>603</c>
+                  <c>748</c>
+                  <c>32.5217391304348</c>
+                  <c>432</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>412</c>
+                  <c>1783</c>
+                  <c>77.5217391304348</c>
+                  <c>1764</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>9895</c>
+                  <c>8013</c>
+                  <c>348.391304347826</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1586</c>
+                  <c>1160</c>
+                  <c>50.4347826086956</c>
+                  <c>224</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>2598</c>
+                  <c>2243</c>
+                  <c>97.5217391304348</c>
+                  <c>560</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>206</c>
+                  <c>376</c>
+                  <c>19.7894736842105</c>
+                  <c>96</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>5240</c>
+                  <c>5662</c>
+                  <c>246.173913043478</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>LAREDO</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>5501</c>
+                  <c>4978</c>
+                  <c>216.434782608696</c>
+                  <c>1680</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>2984</c>
+                  <c>5443</c>
+                  <c>236.652173913043</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>1284</c>
+                  <c>1405</c>
+                  <c>58.5416666666667</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>3477</c>
+                  <c>14252</c>
+                  <c>619.652173913043</c>
+                  <c>19992</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>22111</c>
+                  <c>30445</c>
+                  <c>1268.54166666667</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>5825</c>
+                  <c>6006</c>
+                  <c>240.24</c>
+                  <c>1904</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>825</c>
+                  <c>1729</c>
+                  <c>75.1739130434783</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>236</c>
+                  <c>5500</c>
+                  <c>239.130434782609</c>
+                  <c>3780</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>494</c>
+                  <c>823</c>
+                  <c>35.7826086956522</c>
+                  <c>36</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>2497</c>
+                  <c>2296</c>
+                  <c>99.8260869565217</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>306</c>
+                  <c>14971</c>
+                  <c>598.84</c>
+                  <c>15288</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>3887</c>
+                  <c>8555</c>
+                  <c>356.458333333333</c>
+                  <c>4872</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>17</c>
+                  <c>109</c>
+                  <c>4.73913043478261</c>
+                  <c>76</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>718</c>
+                  <c>1103</c>
+                  <c>47.9565217391304</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>4510</c>
+                  <c>3554</c>
+                  <c>148.083333333333</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>11148</c>
+                  <c>14999</c>
+                  <c>599.96</c>
+                  <c>3600</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1678</c>
+                  <c>2387</c>
+                  <c>103.782608695652</c>
+                  <c>1344</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>7208</c>
+                  <c>6208</c>
+                  <c>258.666666666667</c>
+                  <c>56</c>
+                  <c>July 8, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>358</c>
+                  <c>777</c>
+                  <c>32.375</c>
+                  <c>80</c>
+                  <c>July 2, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>10061</c>
+                  <c>12206</c>
+                  <c>488.24</c>
+                  <c>180</c>
+                  <c>June 29, 2019</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>4844</c>
+                  <c>6502</c>
+                  <c>260.08</c>
+                  <c>1904</c>
+                  <c>July 5, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>4914</c>
+                  <c>5289</c>
+                  <c>195.888888888889</c>
+                  <c>5880</c>
+                  <c>July 6, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>1616</c>
+                  <c>1634</c>
+                  <c>60.5185185185185</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>10</c>
+                  <c>0</c>
+                  <c />
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>19509</c>
+                  <c>28990</c>
+                  <c>1073.7037037037</c>
+                  <c>30360</c>
+                  <c>July 4, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>3760</c>
+                  <c>5519</c>
+                  <c>204.407407407407</c>
+                  <c>2856</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>500</c>
+                  <c>0</c>
+                  <c />
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>18367</c>
+                  <c>26262</c>
+                  <c>972.666666666667</c>
+                  <c>5520</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>820</c>
+                  <c>1595</c>
+                  <c>66.4583333333333</c>
+                  <c>284</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>20071</c>
+                  <c>29606</c>
+                  <c>1096.51851851852</c>
+                  <c>5256</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>8103</c>
+                  <c>10091</c>
+                  <c>373.740740740741</c>
+                  <c>4704</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>4589</c>
+                  <c>13683</c>
+                  <c>506.777777777778</c>
+                  <c>4144</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>267</c>
+                  <c>327</c>
+                  <c>13.625</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>8382</c>
+                  <c>11515</c>
+                  <c>442.884615384615</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>1794</c>
+                  <c>2315</c>
+                  <c>85.7407407407407</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>6653</c>
+                  <c>10965</c>
+                  <c>406.111111111111</c>
+                  <c>3960</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1918</c>
+                  <c>2321</c>
+                  <c>85.962962962963</c>
+                  <c>1344</c>
+                  <c>July 3, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>4726</c>
+                  <c>6369</c>
+                  <c>235.888888888889</c>
+                  <c>5656</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>881</c>
+                  <c>1512</c>
+                  <c>60.48</c>
+                  <c>304</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>10139</c>
+                  <c>11793</c>
+                  <c>436.777777777778</c>
+                  <c>540</c>
+                  <c>July 1, 2019</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>EL PASO</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>7851</c>
+                  <c>11183</c>
+                  <c>414.185185185185</c>
+                  <c>5768</c>
+                  <c>July 4, 2019</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Original Solution</Name>
+              <AnnotationText>Original Solution</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="1323" y="423" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="100" />
+              <Fields>
+                <Field name="Location ID" />
+                <Field name="Product ID" />
+                <Field name="Product" />
+                <Field name="Quantity in Stock" />
+                <Field name="Location" />
+                <Field name="Sum_Units Sold" />
+                <Field name="Avg_Units Sold" />
+                <Field name="On Order Qty" />
+                <Field name="ETA Date" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>010</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>6249</c>
+                  <c>MCALLEN</c>
+                  <c>5952</c>
+                  <c>258.782608695652</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>2052</c>
+                  <c>MCALLEN</c>
+                  <c>1888</c>
+                  <c>82.0869565217391</c>
+                  <c>980</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>5334</c>
+                  <c>MCALLEN</c>
+                  <c>11050</c>
+                  <c>480.434782608696</c>
+                  <c>7056</c>
+                  <c>2019-07-08</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>47795</c>
+                  <c>MCALLEN</c>
+                  <c>58899</c>
+                  <c>2560.82608695652</c>
+                  <c>3120</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>8736</c>
+                  <c>MCALLEN</c>
+                  <c>6636</c>
+                  <c>288.521739130435</c>
+                  <c>1344</c>
+                  <c>2019-07-08</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>2460</c>
+                  <c>MCALLEN</c>
+                  <c>1707</c>
+                  <c>74.2173913043478</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>2278</c>
+                  <c>MCALLEN</c>
+                  <c>8233</c>
+                  <c>357.95652173913</c>
+                  <c>8640</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>416</c>
+                  <c>MCALLEN</c>
+                  <c>744</c>
+                  <c>32.3478260869565</c>
+                  <c>144</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>3455</c>
+                  <c>MCALLEN</c>
+                  <c>7103</c>
+                  <c>308.826086956522</c>
+                  <c>1440</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>1015</c>
+                  <c>MCALLEN</c>
+                  <c>23820</c>
+                  <c>1035.65217391304</c>
+                  <c>16954</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>7588</c>
+                  <c>MCALLEN</c>
+                  <c>12604</c>
+                  <c>548</c>
+                  <c>6160</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>75</c>
+                  <c>MCALLEN</c>
+                  <c>122</c>
+                  <c>5.54545454545455</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>2770</c>
+                  <c>MCALLEN</c>
+                  <c>2541</c>
+                  <c>110.478260869565</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>1171</c>
+                  <c>MCALLEN</c>
+                  <c>3063</c>
+                  <c>133.173913043478</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>14196</c>
+                  <c>MCALLEN</c>
+                  <c>24121</c>
+                  <c>1048.73913043478</c>
+                  <c>6240</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1775</c>
+                  <c>MCALLEN</c>
+                  <c>1893</c>
+                  <c>82.304347826087</c>
+                  <c>1120</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>10922</c>
+                  <c>MCALLEN</c>
+                  <c>10560</c>
+                  <c>459.130434782609</c>
+                  <c>3248</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>517</c>
+                  <c>MCALLEN</c>
+                  <c>1171</c>
+                  <c>50.9130434782609</c>
+                  <c>360</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>18546</c>
+                  <c>MCALLEN</c>
+                  <c>16921</c>
+                  <c>735.695652173913</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>010</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>15927</c>
+                  <c>MCALLEN</c>
+                  <c>15377</c>
+                  <c>668.565217391304</c>
+                  <c>6160</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>5338</c>
+                  <c>HARLINGEN</c>
+                  <c>4271</c>
+                  <c>177.958333333333</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>1091</c>
+                  <c>HARLINGEN</c>
+                  <c>1164</c>
+                  <c>48.5</c>
+                  <c>588</c>
+                  <c>2019-07-08</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>2860</c>
+                  <c>HARLINGEN</c>
+                  <c>5947</c>
+                  <c>247.791666666667</c>
+                  <c>4606</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>37388</c>
+                  <c>HARLINGEN</c>
+                  <c>38448</c>
+                  <c>1537.92</c>
+                  <c>9000</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>4870</c>
+                  <c>HARLINGEN</c>
+                  <c>3447</c>
+                  <c>137.88</c>
+                  <c>112</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>1408</c>
+                  <c>HARLINGEN</c>
+                  <c>669</c>
+                  <c>27.875</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>2059</c>
+                  <c>HARLINGEN</c>
+                  <c>5459</c>
+                  <c>218.36</c>
+                  <c>2040</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>254</c>
+                  <c>HARLINGEN</c>
+                  <c>492</c>
+                  <c>21.3913043478261</c>
+                  <c>144</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>3608</c>
+                  <c>HARLINGEN</c>
+                  <c>4261</c>
+                  <c>177.541666666667</c>
+                  <c>1728</c>
+                  <c>2019-07-09</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>2169</c>
+                  <c>HARLINGEN</c>
+                  <c>10168</c>
+                  <c>391.076923076923</c>
+                  <c>8722</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>4236</c>
+                  <c>HARLINGEN</c>
+                  <c>6172</c>
+                  <c>246.88</c>
+                  <c>4480</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>327</c>
+                  <c>HARLINGEN</c>
+                  <c>495</c>
+                  <c>21.5217391304348</c>
+                  <c>32</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>606</c>
+                  <c>HARLINGEN</c>
+                  <c>1486</c>
+                  <c>64.6086956521739</c>
+                  <c>936</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>940</c>
+                  <c>HARLINGEN</c>
+                  <c>1713</c>
+                  <c>65.8846153846154</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>10397</c>
+                  <c>HARLINGEN</c>
+                  <c>13450</c>
+                  <c>538</c>
+                  <c>3000</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>971</c>
+                  <c>HARLINGEN</c>
+                  <c>1056</c>
+                  <c>44</c>
+                  <c>560</c>
+                  <c>2019-07-05</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>3263</c>
+                  <c>HARLINGEN</c>
+                  <c>3586</c>
+                  <c>149.416666666667</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>284</c>
+                  <c>HARLINGEN</c>
+                  <c>557</c>
+                  <c>24.2173913043478</c>
+                  <c>152</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>8980</c>
+                  <c>HARLINGEN</c>
+                  <c>8425</c>
+                  <c>324.038461538462</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>020</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>6800</c>
+                  <c>HARLINGEN</c>
+                  <c>6347</c>
+                  <c>253.88</c>
+                  <c>3024</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>2488</c>
+                  <c>LAREDO</c>
+                  <c>2468</c>
+                  <c>107.304347826087</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>295</c>
+                  <c>LAREDO</c>
+                  <c>618</c>
+                  <c>26.8695652173913</c>
+                  <c>588</c>
+                  <c>2019-07-05</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>3378</c>
+                  <c>LAREDO</c>
+                  <c>3947</c>
+                  <c>171.608695652174</c>
+                  <c>4998</c>
+                  <c>2019-07-08</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>30282</c>
+                  <c>LAREDO</c>
+                  <c>27863</c>
+                  <c>1211.4347826087</c>
+                  <c>1680</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>3111</c>
+                  <c>LAREDO</c>
+                  <c>2322</c>
+                  <c>100.95652173913</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>1048</c>
+                  <c>LAREDO</c>
+                  <c>632</c>
+                  <c>27.4782608695652</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>2059</c>
+                  <c>LAREDO</c>
+                  <c>7130</c>
+                  <c>310</c>
+                  <c>4080</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>166</c>
+                  <c>LAREDO</c>
+                  <c>298</c>
+                  <c>17.5294117647059</c>
+                  <c>88</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>3489</c>
+                  <c>LAREDO</c>
+                  <c>3742</c>
+                  <c>162.695652173913</c>
+                  <c>936</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>4558</c>
+                  <c>LAREDO</c>
+                  <c>15452</c>
+                  <c>671.826086956522</c>
+                  <c>12936</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>4242</c>
+                  <c>LAREDO</c>
+                  <c>7826</c>
+                  <c>340.260869565217</c>
+                  <c>2632</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>21</c>
+                  <c>LAREDO</c>
+                  <c>40</c>
+                  <c>2.66666666666667</c>
+                  <c>36</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>603</c>
+                  <c>LAREDO</c>
+                  <c>748</c>
+                  <c>32.5217391304348</c>
+                  <c>432</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>412</c>
+                  <c>LAREDO</c>
+                  <c>1783</c>
+                  <c>77.5217391304348</c>
+                  <c>1764</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>9895</c>
+                  <c>LAREDO</c>
+                  <c>8013</c>
+                  <c>348.391304347826</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1586</c>
+                  <c>LAREDO</c>
+                  <c>1160</c>
+                  <c>50.4347826086956</c>
+                  <c>224</c>
+                  <c>2019-07-08</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>2598</c>
+                  <c>LAREDO</c>
+                  <c>2243</c>
+                  <c>97.5217391304348</c>
+                  <c>560</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>206</c>
+                  <c>LAREDO</c>
+                  <c>376</c>
+                  <c>19.7894736842105</c>
+                  <c>96</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>5240</c>
+                  <c>LAREDO</c>
+                  <c>5662</c>
+                  <c>246.173913043478</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>030</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>5501</c>
+                  <c>LAREDO</c>
+                  <c>4978</c>
+                  <c>216.434782608696</c>
+                  <c>1680</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>2984</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>5443</c>
+                  <c>236.652173913043</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>1284</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>1405</c>
+                  <c>58.5416666666667</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>3477</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>14252</c>
+                  <c>619.652173913043</c>
+                  <c>19992</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>22111</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>30445</c>
+                  <c>1268.54166666667</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>5825</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>6006</c>
+                  <c>240.24</c>
+                  <c>1904</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>825</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>1729</c>
+                  <c>75.1739130434783</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>236</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>5500</c>
+                  <c>239.130434782609</c>
+                  <c>3780</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>494</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>823</c>
+                  <c>35.7826086956522</c>
+                  <c>36</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>2497</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>2296</c>
+                  <c>99.8260869565217</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>306</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>14971</c>
+                  <c>598.84</c>
+                  <c>15288</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>3887</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>8555</c>
+                  <c>356.458333333333</c>
+                  <c>4872</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>17</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>109</c>
+                  <c>4.73913043478261</c>
+                  <c>76</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>718</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>1103</c>
+                  <c>47.9565217391304</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>4510</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>3554</c>
+                  <c>148.083333333333</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>11148</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>14999</c>
+                  <c>599.96</c>
+                  <c>3600</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1678</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>2387</c>
+                  <c>103.782608695652</c>
+                  <c>1344</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>7208</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>6208</c>
+                  <c>258.666666666667</c>
+                  <c>56</c>
+                  <c>2019-07-08</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>358</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>777</c>
+                  <c>32.375</c>
+                  <c>80</c>
+                  <c>2019-07-02</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>10061</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>12206</c>
+                  <c>488.24</c>
+                  <c>180</c>
+                  <c>2019-06-29</c>
+                </r>
+                <r>
+                  <c>050</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>4844</c>
+                  <c>CORPUS CHRISTI</c>
+                  <c>6502</c>
+                  <c>260.08</c>
+                  <c>1904</c>
+                  <c>2019-07-05</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>18</c>
+                  <c>Peter Cotton Ale 24pk Can</c>
+                  <c>4914</c>
+                  <c>EL PASO</c>
+                  <c>5289</c>
+                  <c>195.888888888889</c>
+                  <c>5880</c>
+                  <c>2019-07-06</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>310</c>
+                  <c>Baby Got Bock 1/4 Keg</c>
+                  <c>1616</c>
+                  <c>EL PASO</c>
+                  <c>1634</c>
+                  <c>60.5185185185185</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>311</c>
+                  <c>Bock to The Future 1/6 Keg</c>
+                  <c>10</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>318</c>
+                  <c>IP Ale 12pk Can</c>
+                  <c>19509</c>
+                  <c>EL PASO</c>
+                  <c>28990</c>
+                  <c>1073.7037037037</c>
+                  <c>30360</c>
+                  <c>2019-07-04</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>322</c>
+                  <c>Audrey Hopburn Belgian 6pk Bottle</c>
+                  <c>3760</c>
+                  <c>EL PASO</c>
+                  <c>5519</c>
+                  <c>204.407407407407</c>
+                  <c>2856</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>323</c>
+                  <c>Bitter Women IPA 16oz Bottle</c>
+                  <c>500</c>
+                  <c />
+                  <c />
+                  <c />
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>328</c>
+                  <c>Hoptimus Prime 25oz Bottle</c>
+                  <c>18367</c>
+                  <c>EL PASO</c>
+                  <c>26262</c>
+                  <c>972.666666666667</c>
+                  <c>5520</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>350</c>
+                  <c>Smooth Hoperator 6pk Can</c>
+                  <c>820</c>
+                  <c>EL PASO</c>
+                  <c>1595</c>
+                  <c>66.4583333333333</c>
+                  <c>284</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>353</c>
+                  <c>Pathological Lager 4pk Can</c>
+                  <c>20071</c>
+                  <c>EL PASO</c>
+                  <c>29606</c>
+                  <c>1096.51851851852</c>
+                  <c>5256</c>
+                  <c>2019-06-28</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>370</c>
+                  <c>Robohop 1/2 Keg</c>
+                  <c>8103</c>
+                  <c>EL PASO</c>
+                  <c>10091</c>
+                  <c>373.740740740741</c>
+                  <c>4704</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>372</c>
+                  <c>Hoppy Ending Pale Ale 32oz Can</c>
+                  <c>4589</c>
+                  <c>EL PASO</c>
+                  <c>13683</c>
+                  <c>506.777777777778</c>
+                  <c>4144</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>50</c>
+                  <c>Tricerahops 40oz Bottle</c>
+                  <c>267</c>
+                  <c>EL PASO</c>
+                  <c>327</c>
+                  <c>13.625</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>53</c>
+                  <c>Gary Brewsey 25oz Can</c>
+                  <c>8382</c>
+                  <c>EL PASO</c>
+                  <c>11515</c>
+                  <c>442.884615384615</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>70</c>
+                  <c>Hold Me Just a Little Bit Lager 6pk Can</c>
+                  <c>1794</c>
+                  <c>EL PASO</c>
+                  <c>2315</c>
+                  <c>85.7407407407407</c>
+                  <c>0</c>
+                  <c>No PO</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>718</c>
+                  <c>Hoppy Seconds 1/4 Keg</c>
+                  <c>6653</c>
+                  <c>EL PASO</c>
+                  <c>10965</c>
+                  <c>406.111111111111</c>
+                  <c>3960</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>72</c>
+                  <c>Mother in Lager 20pk Bottle</c>
+                  <c>1918</c>
+                  <c>EL PASO</c>
+                  <c>2321</c>
+                  <c>85.962962962963</c>
+                  <c>1344</c>
+                  <c>2019-07-03</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>722</c>
+                  <c>Joose On The Loose IPA 1/2 Keg</c>
+                  <c>4726</c>
+                  <c>EL PASO</c>
+                  <c>6369</c>
+                  <c>235.888888888889</c>
+                  <c>5656</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>750</c>
+                  <c>Honey Boo Brew 1/2 Keg</c>
+                  <c>881</c>
+                  <c>EL PASO</c>
+                  <c>1512</c>
+                  <c>60.48</c>
+                  <c>304</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>770</c>
+                  <c>Stout It Out 6pk Bottles</c>
+                  <c>10139</c>
+                  <c>EL PASO</c>
+                  <c>11793</c>
+                  <c>436.777777777778</c>
+                  <c>540</c>
+                  <c>2019-07-01</c>
+                </r>
+                <r>
+                  <c>060</c>
+                  <c>772</c>
+                  <c>The Pursuit of Hoppiness 18pk Can</c>
+                  <c>7851</c>
+                  <c>EL PASO</c>
+                  <c>11183</c>
+                  <c>414.185185185185</c>
+                  <c>5768</c>
+                  <c>2019-07-04</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Updated Solution</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1467" y="423" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\jheisler\AppData\Local\Temp\Engine_1832_c800161b38804f358a2cafc9f41a35a7_\Engine_18120_17713ac44cfc4bafbc916450f88b4918_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="596" y="302" width="134.8419" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Inventory</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="621" y="351" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">.\Inventory data.xlsx|||`Inventory data$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Inventory data.xlsx
+Query=`Inventory data$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="143" y="191" width="406" height="423.9999" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[ ]]></Caption>
+          <Style TextColor="#005e87" FillColor="#005e87" BorderColor="#314c4a" Transparency="80" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="153" y="477" width="386" height="127.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text />
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="252" g="220" b="209" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="171" y="225" width="362" height="61" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Weekly Exercise 196
+John Heisler</Text>
+              <Font name="Arial" size="18" style="1" />
+              <TextColor r="0" g="94" b="135" />
+              <FillColor r="252" g="220" b="209" />
+              <Shape shape="3" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="172.0001" y="488" width="348" height="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text />
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+              <BG_Image>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</BG_Image>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="157" y="279" width="374" height="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Using the provided input files, organize the data to display: 
+
+- Inventory levels for products by location
+- Previous sales history
+- Average sales per product per location
+- Total incoming product for each location
+- Earliest Purchase Order date a product may arrive. 
+
+Display all inventory levels even if no sales exist or no products are on purchase order. 
+]]></Text>
+              <Font name="Arial" size="12" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="48" Connection="Left" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="54" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="54" Connection="Left" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="66" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="66" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="47" Connection="Targets" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>challenge_198_start_file_Heisler</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
